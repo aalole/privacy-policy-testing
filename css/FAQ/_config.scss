@@ -1,0 +1,102 @@
+$fontColor : #514949;
+$SecondaryColor: #f2ebe9;
+$primaryColor: #e7332b;
+$borderColor : #0b0b1080;
+
+@mixin easeIn {
+  transition: all 0.6s ease-out;
+}
+
+// background img
+$show-home-img: true;
+$home-img: $SecondaryColor;
+
+// background img
+@mixin backgroundImg {
+  @if $show-home-img {
+    &.bg-img {
+      background: $home-img;
+      opacity: 0.6;
+    }
+  }
+}
+
+
+// set text color 
+// @function set-text-color($color) {
+//   @if (lightness($color) > 40) {
+//     @return #000;
+//   } @else {
+//     @return #f1f1f1;
+//   }
+// }
+
+// media query mixins 
+@mixin mediaXm {
+  @media screen and (min-width: 300px) and (max-width: 500px){
+    @content;
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 850px){
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1171px){
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (max-width: 1171px){
+    @content;
+  }
+}
+
+@mixin h1 {
+  font-family: Averta-Bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #514949;
+}
+
+
+@mixin h2 {
+  font-family: Averta-Bold;
+  font-size: 18px;
+  line-height: 48px;
+  color: #514949;
+}
+
+@mixin h3 {
+  font-family: Averta-Regular;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #514949;
+}
+
+@mixin paragraph {
+  font-family: Averta-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: #514949;
+
+}
+
+@mixin smallParagraph {
+  font-family: Averta-Regular;
+  font-size: 14px;
+  line-height: 24px;
+  color: #514949;
+}

@@ -1,0 +1,130 @@
+main {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 9rem 0rem;
+
+  .accordion {
+    padding-bottom: 3.5rem;
+    .accordion__item {
+      border-top: 0.3px solid rgba(11, 11, 16, 0.5);;
+      padding: 1.3rem 1rem;
+      &:nth-child(5) {
+        border-bottom: 0.3px solid rgba(11, 11, 16, 0.39);;
+      }
+
+      &:target {
+        background: $SecondaryColor;
+
+        .accordion__item__header {
+          a {
+            .arrow__left {
+              display: none;
+              margin-right: 1.5rem;
+              vertical-align: text-top;
+            }
+    
+            .arrow__down {
+              display: block;
+              margin-right: 1.5rem;
+            }
+          }
+        }
+        
+        .accordion__item__body {
+          max-height: 10rem;
+          padding: 1rem 2.5rem .5rem 2.5rem;
+          @include paragraph();
+          overflow: visible;
+          transition: .2s ease-out;
+        }
+      }
+
+      .accordion__item__header {
+        a {
+          @include h2();
+          line-height: 30px;
+          color: $fontColor;
+          display: inline-flex;
+
+          .arrow__left {
+            display: block;
+            margin-right: 1.5rem;
+          }
+
+          .arrow__down {
+            display: none;
+          }
+        }
+        
+      }
+
+      .accordion__item__body {
+        max-height: 0;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .text__md {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      @include h3();
+
+      a {
+        color: $primaryColor;
+      }
+    }
+  }
+    
+  // .second__section {
+  //   // @include backgroundImg();
+  //   .content {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-content: center;
+  //     justify-content: center;
+
+  //     h2 {
+  //       @include h2();
+  //       color: #ffffff;
+  //       text-align: center;
+  //     }
+  
+  //     .custom__btn {
+  //       width: 9.25rem;
+  //       height: 46px;
+  //       outline: none;
+  //       border: 1px solid #E7332B;
+  //       background: #E7332B;
+  //       @include paragraph();
+  //       color: #ffffff;
+  //       align-self: center;
+  //       margin-top: 2rem;
+  //     }
+  //   }
+   
+  // }
+}
+
+
+// Responsiveness
+@include mediaXm {
+  .second__section {
+    .second__section {
+      padding-top: 8rem !important;
+      .content {
+        h2 {
+          @include h2();
+          font-size: 20px !important;
+        }
+      }
+      
+    }
+  }
+}
+

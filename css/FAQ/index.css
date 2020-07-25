@@ -1,0 +1,226 @@
+main {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 9rem 0rem;
+}
+
+main .accordion {
+  padding-bottom: 3.5rem;
+}
+
+main .accordion .accordion__item {
+  border-top: 0.3px solid rgba(11, 11, 16, 0.5);
+  padding: 1.3rem 1rem;
+}
+
+main .accordion .accordion__item:nth-child(5) {
+  border-bottom: 0.3px solid rgba(11, 11, 16, 0.39);
+}
+
+main .accordion .accordion__item:target {
+  background: #f2ebe9;
+}
+
+main .accordion .accordion__item:target .accordion__item__header a .arrow__left {
+  display: none;
+  margin-right: 1.5rem;
+  vertical-align: text-top;
+}
+
+main .accordion .accordion__item:target .accordion__item__header a .arrow__down {
+  display: block;
+  margin-right: 1.5rem;
+}
+
+main .accordion .accordion__item:target .accordion__item__body {
+  max-height: 10rem;
+  padding: 1rem 2.5rem .5rem 2.5rem;
+  font-family: Averta-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: #514949;
+  overflow: visible;
+  transition: .2s ease-out;
+}
+
+main .accordion .accordion__item .accordion__item__header a {
+  font-family: Averta-Bold;
+  font-size: 18px;
+  line-height: 48px;
+  color: #514949;
+  line-height: 30px;
+  color: #514949;
+  display: inline-flex;
+}
+
+main .accordion .accordion__item .accordion__item__header a .arrow__left {
+  display: block;
+  margin-right: 1.5rem;
+}
+
+main .accordion .accordion__item .accordion__item__header a .arrow__down {
+  display: none;
+}
+
+main .accordion .accordion__item .accordion__item__body {
+  max-height: 0;
+  overflow: hidden;
+}
+
+main .text__md {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main .text__md h2 {
+  text-align: center;
+  font-family: Averta-Regular;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #514949;
+}
+
+main .text__md h2 a {
+  color: #e7332b;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .second__section .second__section {
+    padding-top: 8rem !important;
+  }
+  .second__section .second__section .content h2 {
+    font-family: Averta-Bold;
+    font-size: 18px;
+    line-height: 48px;
+    color: #514949;
+    font-size: 20px !important;
+  }
+}
+
+header {
+  background: rgba(242, 235, 233, 0.6);
+  font-family: myfont;
+  transition: all 0.5s;
+}
+
+header .nav-link {
+  font-family: Averta-Regular;
+  font-size: 16px;
+  line-height: 19px;
+  color: #514949;
+}
+
+header .nav-link:hover {
+  font-family: Averta-Bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E7332B !important;
+}
+
+header .h-btn {
+  background: #E7332B;
+  border-radius: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  header .h-btn {
+    margin-left: 130px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Averta-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: #514949;
+  color: #514949;
+  font-family: Averta-Regular;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none !important;
+  color: #514949;
+}
+
+@font-face {
+  font-family: "Averta-Regular";
+  src: url("/fonts/Averta.woff") format("woff"), url("/fonts/Averta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Averta-Bold";
+  src: url("/fonts/Averta-Bold.woff") format("woff"), url("/fonts/Averta-Bold.otf") format("opentype");
+}
+
+header {
+  background: #f2ebe9;
+  width: 100%;
+  height: 35em;
+  max-width: 100%;
+  position: relative;
+}
+
+header .header__text {
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+
+header .header__text p {
+  font-family: Averta-Regular;
+  font-size: 14px;
+  line-height: 24px;
+  color: #514949;
+  color: #e7332b;
+  text-align: center;
+}
+
+header .header__text h1 {
+  width: 55%;
+  font-family: Averta-Bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #514949;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1171px) {
+  header .header__text h1 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header__text h1 {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  header .header__text {
+    top: 20% !important;
+    left: 50% !important;
+    transform: translate(-50%, 20%) !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
