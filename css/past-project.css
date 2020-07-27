@@ -1,0 +1,167 @@
+header.p-t-c {
+    padding: auto 15px;
+}
+
+/* ######## project intro section and general styling ####### */
+.intro-text h3,
+.project-list-title h3 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #E7332B;
+}
+
+.intro-text p {
+    font-family: "Averta-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    color: #514949;
+    opacity: 0.9;
+    text-align: justify;
+}
+
+.project-intro {
+    background: #fff;
+}
+
+.project-intro>* {
+    padding: 30px 20px;
+}
+
+.intro-img {
+    margin-bottom: 25px;
+}
+
+.intro-img img {
+    display: block;
+    margin: auto;
+    width: 292px;
+    height: 296px;
+}
+
+
+.project-list-title p {
+    text-align: center;
+    font-family: "Averta-Bold";
+    font-size: 24px;
+    line-height: 40px;
+    color: #514949;
+}
+
+/* ######## project banner####### */
+.project-banner,
+.project,
+.enroll,
+.projects, .footer-r {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.project-banner button {
+    background: #E7332B;
+    font-family: " Averta-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 148px;
+    height: 46px;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.5 ease
+}
+
+.project-banner button:hover {
+    color: #E7332B;
+    background: #FFFFFF;
+}
+
+/* ######## project all projects####### */
+.project {
+    background: #fff;
+    padding: 20px 5px;
+}
+
+.project-caption>* {
+    padding: 10px 10px;
+}
+
+.project-caption h3 {
+    font-family: "Averta-Bold";
+    font-size: 18px;
+    line-height: 28px;
+    color: #514949;
+}
+
+.project-caption p {
+    font-family: "Averta-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    color: #514949;
+    opacity: 0.9;
+}
+
+.project-caption {
+    border-bottom: .7px solid rgba(81, 73, 73, 0.2);
+    padding-bottom: 30px;
+}
+
+.project a {
+    font-family: "Averta-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #E7332B;
+    opacity: 0.5;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+@media screen and (min-width:700px) {
+    .project-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-list-title {
+        width: 70%;
+    }
+
+    .intro-text {
+        width: 60%;
+    }
+
+    .project-list-title p {
+        text-align: left;
+    }
+
+    .projects,
+    .project-intro {
+        display: flex!important;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        width: 400px;
+        height: 280px;
+        flex: 0 0 auto;
+    }
+
+    .project a {
+        position: relative;
+        margin-top: 30px;
+        top: 35px;
+    }
+}
+
+footer {
+    background: #fff;
+    width: 100%;
+    padding-top: 40px;
+}
+.footer-r{
+    margin-top: 50px;
+}
+.enroll{
+    margin: 40px auto;
+}
