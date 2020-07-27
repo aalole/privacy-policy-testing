@@ -19,9 +19,13 @@ header.p-t-c {
     text-align: justify;
 }
 
-.project-intro {
+.intro-wrapper {
     background: #fff;
 }
+
+/* .project-intro {
+    
+} */
 
 .project-intro>* {
     padding: 30px 20px;
@@ -51,7 +55,8 @@ header.p-t-c {
 .project-banner,
 .project,
 .enroll,
-.projects, .footer-r {
+.projects,
+.footer-r {
     max-width: 90%;
     margin: 20px auto;
 }
@@ -66,12 +71,21 @@ header.p-t-c {
     height: 46px;
     margin: 20px auto;
     text-align: center;
-    transition: all 0.5 ease
+    transition: all 0.5 ease;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.enroll-now {
+    max-width: 200px;
+    margin: 0 auto;
+    padding-left: 20px;
 }
 
 .project-banner button:hover {
     color: #E7332B;
     background: #FFFFFF;
+    border: 1px solid #E7332B;
 }
 
 /* ######## project all projects####### */
@@ -115,6 +129,11 @@ header.p-t-c {
 }
 
 @media screen and (min-width:700px) {
+    .project-intro {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
     .project-banner {
         display: flex;
         justify-content: space-between;
@@ -136,7 +155,7 @@ header.p-t-c {
 
     .projects,
     .project-intro {
-        display: flex!important;
+        display: flex !important;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
@@ -160,9 +179,11 @@ footer {
     width: 100%;
     padding-top: 40px;
 }
-.footer-r{
+
+.footer-r {
     margin-top: 50px;
 }
-.enroll{
+
+.enroll {
     margin: 40px auto;
 }
