@@ -119,6 +119,7 @@ header.p-t-c {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 150px;
     }
 
     .project-list-title {
