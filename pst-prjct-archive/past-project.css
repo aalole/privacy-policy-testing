@@ -128,7 +128,7 @@ header.p-t-c {
     padding: 20px 10px;
 }
 
-@media screen and (min-width:772px) {
+@media screen and (min-width:700px) {
     .project-intro {
         max-width: 90%;
         margin: 0 auto;
@@ -147,25 +147,11 @@ header.p-t-c {
 
     .intro-text {
         width: 60%;
-        position: relative;
-        bottom: 60px;
     }
 
     .project-list-title p {
         text-align: left;
     }
-    .project-intro{
-        height: 500px;;
-    }
-
-    .intro-img img{
-        width: 292;
-        height: 292px;
-    }
-   .intro-img{
-       position: relative;
-       right: 55px;
-   }
 
     .projects,
     .project-intro {
