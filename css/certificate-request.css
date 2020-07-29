@@ -1,0 +1,274 @@
+/* Typography
+------------------------------- */
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Thin.woff") format("woff"),
+        url("../fonts/Averta-Thin.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta.woff") format("woff"),
+        url("../fonts/Averta.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Semibold.woff") format("woff"),
+        url("../fonts/Averta-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Bold.woff") format("woff"),
+        url("../fonts/Averta-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+
+
+/* Custom Properties 
+------------------------------- */
+
+:root {
+    --primary-font: "Averta", sans-serif;
+    --primary-color: #514949;
+    --secondary-color: #E7332B;
+    --form-border-color: #0B0B0B;
+    --banner-bg-color: #F2EBE9;
+
+    --facebook-color: #3b5998;
+    --twitter-color: #00acee;
+
+}
+
+/* Bootstrap Overrides
+------------------------------- */
+
+.btn {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 0;
+
+
+    color: #fff;
+    font-weight: 700;
+
+
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    border-color: var(--secondary-color) !important;
+    background: var(--secondary-color) !important;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
+.fontey {
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-control,
+.custom-select {
+    height: 55px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    border-radius: 0px;
+    border-color: var(--form-border-color);
+    border: 1px solid var(--form-border-color);
+}
+
+.jj:hover {
+    color: #E7332B !important;
+}
+
+.custom-select {
+    background: #fff url(../images/certificate-request/select-dropdown-icon.svg) no-repeat right 18px center / 15px 10px;
+}
+
+.form-control::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(102, 102, 102, 0.5);
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Global Styles
+------------------------------- */
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+/* Navigation
+------------------------------- */
+
+header {
+    background: var(--banner-bg-color);
+}
+
+.join-startng {
+    background: var(--secondary-color);
+}
+
+/* Masthead
+------------------------------- */
+
+.masthead {
+    margin-bottom: 89px;
+}
+/* Masthead
+------------------------------- */
+
+.masthead,
+.navigationHead {
+    padding-bottom: 89px;
+
+    background: var(--banner-bg-color);
+}
+
+.page-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 14px;
+}
+
+/* Request Form
+------------------------------- */
+
+.form-section.container {
+    max-width: 878px;
+}
+
+.form-fieldset {
+    margin-bottom: 41px;
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    color: var(--secondary-color);
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.tel-format {
+    max-width: 96px;
+    margin-right: 19px;
+    border-radius: 4px;
+}
+
+
+/* Footer
+------------------------------- */
+
+footer {
+    margin-top: 121px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer h4,
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer h4 {
+    margin-bottom: 24px;
+}
+
+footer .nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--primary-color);
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.facebook-link {
+    color: var(--facebook-color);
+    font-size: 20px;
+}
+
+.twitter-link {
+    color: var(--twitter-color);
+    font-size: 20px;
+}
+
+.copyright {
+    font-weight: bold;
+    margin-top: 56px;
+    padding: 32px 0 46px;
+    border-top: 0.7px solid rgba(81, 73, 73, 0.2)
+}
+
+.mobile-footer {
+    display: none;
+}
+
+.mobile-footer {
+    display: none;
+
+}
+
+@media (max-width: 769px) {
+    .footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+.container {
+    max-width: 1238px !important;
+    overflow: hidden !important;
+}

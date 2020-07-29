@@ -1,0 +1,194 @@
+@font-face{
+    font-family: 'Averta';
+    src: url('/fonts/Averta-Black.woff') format('woff'),
+        url('/fonts/Averta-Black.woff') format('woff');
+        font-weight:500;
+        font-style: normal;
+}
+
+@font-face{
+    font-family: 'Averta-Regular';
+    src: url('/fonts/Averta.woff') format('woff');
+        font-style: normal;
+}
+
+@font-face{
+    font-family: 'Averta-Bold';
+    src: url('/fonts/Averta-Bold.woff')  format('woff');
+    font-style: normal;
+    ;
+}
+
+*{
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+    }
+
+body, html {
+     height: 100%;
+}
+  .custom-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  /* NAVBAR LINK */
+  header {
+    /* background: rgba(242, 235, 233, 0.6); */
+    font-family:myfont;
+    transition: all 0.5s;
+}
+
+header .h-btn {
+    background: #E7332B;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 1000px ) {
+    header .h-btn {
+        margin-left: 100px;
+    }
+}
+
+
+  .active-link{
+    color: #E7332B !important; 
+    font-family: 'Averta-Bold'!important ;
+  }
+
+  .curriculum-link{
+    font-family: 'Averta-Regular';
+      font-size: 1rem;
+      color: #E7332B;
+  }
+  .curriculum-link:hover{
+      text-decoration: none;
+      color: #E7332B;
+  }
+  .date-text{
+    font-size: 1rem;
+    font-family: 'Averta-Bold' ;
+  }
+
+  .overview-text{
+      font-size: 1.5rem !important;
+      font-family: 'Averta-Regular';
+  }
+
+  .main-heading{
+    font-size: 1.5rem !important;
+    font-family: 'Averta-Bold';
+    color: #514949;
+    line-height: 1.5rem;
+    margin-bottom: 16px !important;
+  }
+
+  .section-2, .section-3{
+      /* background-color: #F7F3F2; */
+      background-color: rgba(247, 243, 242, 0.5);;
+  }
+
+  .red-dot{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 30px;
+    /* top: 200px; */
+    background-color: #E7332B;
+    border-radius: 50%;
+
+  }
+
+  .section-2{
+      margin-bottom: 72px;
+  }
+
+  .section-3{
+      margin-top: 72px;
+  }
+
+  .page-text{
+      color: #ACACAC;
+      font-size: 1rem;
+      line-height: 150%;
+      margin-top: 8px !important;
+      font-family: 'Averta-Regular';
+  }
+
+  .tutors{
+      margin-bottom: 16px;
+  }
+
+  .tutor-para {
+    margin-left: 23px; /* I added this property */
+  }
+
+  .tutor-in-charge{
+
+      width: 152px;
+      height: 50px;
+      background-color: #FFFFFF;
+  }
+
+  .tutor-text{
+    font-family: 'Averta-Regular';
+    font-size: 1rem;
+    color: #514949;
+    line-height: 150%;
+  }
+  .tutor-info{
+    font-family: 'Averta-Bold';
+    font-size: 1.125rem;
+    color: #514949;
+  }
+
+  h2{
+      color: #514949;;
+      font-family: 'Averta-R';
+      font-size: 1.5em;
+      line-height: 100%;
+      margin-bottom: 8px !important;
+  }
+
+  h4{
+      color: #514949;;
+      font-family: 'Averta-Bold';
+      font-size: 1.125rem !important;
+      line-height: 100%;
+      margin-top: 16px !important;
+      margin-bottom: 16px !important;
+  }
+
+  .sub-heading{
+    color: #514949;;
+    font-family: 'Averta-Bold';
+    font-size: 1.5rem;
+    line-height: 28px;
+  }
+
+
+  @media only screen and  (max-width:641px){
+      h2{
+          font-size: 1em;
+      }
+
+      .overview-text{
+          font-size: 1rem;
+      }
+
+      .curriculum-link, .date-text{
+        font-size: 0.8rem;
+      }
+
+      .page-text{
+          font-size: 0.875rem;
+      }
+
+     .tutor-img{
+         display: block;
+         /* width: 50%;   */     /* Remove this property it's not needed */
+     }
+  }

@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /policy, success, curriculum-v1, code-of-conduct, Terms&Conditions, certificate/
+Noindex: /policy, curriculum-v1, code-of-conduct, Terms&Conditions, certificate/
+Allow: /courses/
+
+
+User-agent: Googlebot
+Disallow: /sponsors/*?img=*
+
+
+User-agent: Twitterbot
+Allow: /blog/*
+Allow: /ranking-factors/*
+Allow: /FAQ/*

@@ -2,7 +2,6 @@ header {
   background: rgba(242, 235, 233, 0.6);
   font-family: myfont;
   transition: all 0.5s;
-
   .nav-link {
     font-family: Averta-Regular;
     font-size: 16px;
@@ -13,7 +12,7 @@ header {
       font-family: Averta-Bold;
       font-size: 16px;
       line-height: 19px;
-      color: #E7332B !important;
+      // color: #E7332B !important;
     }
   }
 }
@@ -26,5 +25,88 @@ header .h-btn {
 @media screen and (min-width: 1000px ) {
   header .h-btn {
     margin-left: 130px;
+  }
+}
+
+
+
+header {
+  background-color: #F2EBE9;
+}
+
+
+/* section 3 */
+.section-3 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 5rem 0;
+  text-align: center;
+  background: url('/images/faqs/black.min.png') no-repeat;
+  background-size: cover;
+  h2 {
+    color: white;
+    @include h3();
+  }
+
+  button {
+    background-color: #E7332B;
+    border: none;
+    color: white;
+    width: 152px;
+    padding: .8rem;
+    &:hover {
+      background-color: #ba241e;
+    }
+  }
+}
+
+/* Footer Beginning */
+footer {
+  margin-top: 121px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer h4,
+.copyright {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer h4 {
+  margin-bottom: 24px;
+}
+
+footer .nav-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: var(--primary-color);
+}
+
+footer .nav-link:hover {
+  text-decoration: underline;
+}
+
+.facebook-link {
+  color: var(--facebook-color);
+  font-size: 20px;
+}
+
+.twitter-link {
+  color: var(--twitter-color);
+  font-size: 20px;
+}
+
+.copyright {
+  font-weight: bold;
+  margin-top: 56px;
+  padding: 32px 0 46px;
+  border-top: 0.7px solid #514949;
+}
+
+@media screen and (min-width: 768px) {
+  .section-3 {
+    margin: 10rem auto;
   }
 }

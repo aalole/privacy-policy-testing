@@ -1,0 +1,40 @@
+.footer{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+    min-height: 300px;
+    flex-wrap: wrap;
+    color: #444444 !important;
+    padding-top: 50px;
+}
+.footer h5{
+    color: #444444 !important;
+    font-size: 18px;
+}
+
+.footer p{
+    color: #444444 !important;
+}
+.footer-line{
+    width:90%;
+    height:1px;
+    background-color: #444444;
+    margin:auto;
+    margin-top:20px;
+
+}
+img{
+  width: 203px;
+}
+a{
+  text-decoration: none;
+}
+@media (max-width:800px){
+    .footer{
+        justify-content: flex-start;
+        flex-direction: column;
+      
+        
+    }
+ 
+}

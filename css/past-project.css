@@ -1,6 +1,3 @@
-header.p-t-c {
-    padding: auto 15px;
-}
 
 @font-face {
     font-family: "Averta-Regular";
@@ -14,7 +11,7 @@ header.p-t-c {
     font-weight: 600;
 }
 
-/* ######## project intro section and general styling ####### */
+/* ######## project intro section and general tyling ####### */
 .intro-text h3,
 .project-list-title h3 {
     font-size: 14px;
@@ -108,6 +105,7 @@ header.p-t-c {
 }
 
 /* ######## project all projects####### */
+
 .project {
     background: #fff;
     padding: 20px 5px;
@@ -146,10 +144,12 @@ header.p-t-c {
     text-decoration: none;
     padding: 20px 10px;
 }
+.rd-padding{
+    padding: 100px 0;
+}
 
 @media screen and (min-width:772px) {
 
-    .no_padding,
     .npad {
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -171,6 +171,12 @@ header.p-t-c {
     footer {
         max-width: 1238px;
         margin: 0 auto;
+    }
+
+    .no-padding {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        height: 342px;
     }
 
     .project-banner {
@@ -230,25 +236,21 @@ header.p-t-c {
     }
 }
 
-.footer-r {
-    margin-top: 50px;
-}
+
 
 .enroll {
     margin: 40px auto;
 }
 
-/* .footer-npad{
-    padding-left: 0;
-    padding-right: 0;
+.bg-white {
+    background-color: #fff;
+    padding: 30px 15px;
 }
-.footer-npad h4{
-    text-align: right;
-}
-.footer-npad a{
-    margin-left: 150px;
-    float: right;
-    padding: 0 10px 0 0;
-} */
 
-@media screen and (max-width:772px) {}
+.twitter {
+    color: #00acee;
+}
+
+.fb {
+    color: #3b5998;
+}

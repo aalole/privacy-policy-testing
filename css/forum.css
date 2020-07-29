@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('../fonts/Averta.woff') format('woff'),
+        url('../fonts/Averta.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Averta-bold';
+    src: url('../fonts/Averta-Bold.woff') format('woff'),
+        url('../fonts/Averta-Bold.otf') format('opentype');
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Averta', 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.lat {
+    font-family: Averta-bold;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.jj:hover {
+    color: #E7332B !important;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+/* Header Beginning */
+header {
+    background-color: #F2EBE9 !important;
+    transition: all 0.5s;
+}
+
+header .h-btn {
+    background: #E7332B;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    header .h-btn {
+        margin-left: 100px;
+    }
+}
+
+/* Header End */
+
+/* section 1 */
+.section-1 {
+    background-color: #F2EBE9;
+}
+
+.intro-text {
+    text-align: center;
+    padding: 2rem 0 5rem 0;
+    margin: auto;
+    max-width: 600px;
+}
+
+.intro-text p {
+    color: #E7332B;
+}
+
+.intro-text h2 {
+    color: #514949;
+    font-weight: 600;
+}
+
+/* Section 2 */
+.section-2 {
+    margin: 5rem 0;
+}
+
+.filters {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters .filter {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+/* Search */
+.search {
+    width: 70%;
+    background: url('../images/forum/search.png');
+    background-repeat: no-repeat;
+    padding: 1.5em;
+    background-position: 98% center;
+}
+
+.search-cont input {
+    border: 1px solid #514949;
+    border-radius: 0;
+    padding: 1.4rem 2.5rem 1.4rem .8rem;
+}
+
+.start {
+    padding: .6em 1em;
+    background: #E7332B;
+    color: white;
+    text-decoration: none !important;
+    text-align: center;
+    transition: .5s;
+}
+
+.start:hover {
+    background: #ffff;
+    color: #E7332B !important;
+    border: 1px solid #E7332B;
+}
+
+.group {
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+@media screen and (max-width:775px) {
+    .group {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search {
+        width: 100%;
+        margin: 1em auto;
+    }
+}
+
+.forum-container {
+  overflow: visible !important;
+}
+
+.forum-box {
+    padding: 1.5rem 5%;
+    border: 1px solid #514949;
+    text-align: center;
+}
+
+.forum-box .introduction {
+    position: absolute;
+    padding: .1rem 1.2rem;
+    right: 30px;
+    top: -15px;
+    background: white;
+    border: 1px solid #514949;
+}
+
+.forum-box img {
+    border-radius: 50%;
+}
+
+.forum-box .img img {
+  width: 100px;
+}
+
+.forum-box .img {
+    margin-bottom: 2rem;
+}
+
+.forum-box .people {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.forum-box .comments {
+    display: flex;
+    justify-content: center;
+}
+
+.forum-box .about {
+    margin-bottom: 2rem;
+}
+
+.details .people {
+    margin-bottom: 2rem;
+}
+
+.details .people img {
+    width: 50px;
+}
+
+/* section-3 */
+.section-3 .forum-box {
+    width: 100%;
+    margin: 3rem auto;
+    padding: 3rem 5%;
+}
+
+.section-3 .forum-box hr {
+    width: 80%;
+    border-top: 1px solid #514949;
+}
+
+.forum-comments {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.forum-comments input {
+    border: 1px solid #514949;
+    border-radius: 0;
+    padding: 1.3rem;
+}
+
+.forum-comments .input-group-text {
+    border-radius: 0;
+    border: 1px solid #514949;
+    background-color: #E7332B;
+    color: white;
+    padding: 0 1.5rem;
+}
+
+.message img {
+    width: 85px;
+    margin-bottom: 2rem;
+}
+
+.user-comments {
+    margin-top: 4rem;
+}
+
+.user-comment {
+    margin: 2rem 0;
+}
+
+.user-comment .image img {
+    width: 70px;
+}
+
+.more-comments {
+    width: 100%;
+    text-align: center;
+}
+
+.section-3 .btn-more {
+    border-radius: 0;
+    background-color: #E7332B;
+    color: white;
+    padding: .65rem 1.5rem;
+    margin-left: auto;
+}
+
+/* section-4 */
+.section-4 .forum-box {
+    width: 100%;
+    margin: 4rem auto;
+}
+
+/* section 5 */
+.section-5 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 5rem 0;
+    text-align: center;
+    background: url('../images/forum/black.min.png') no-repeat;
+    background-size: cover;
+}
+
+.section-5 h2 {
+    color: white;
+}
+
+.section-5 button {
+    background-color: #E7332B;
+    border: none;
+    color: white;
+    width: 152px;
+    padding: .8rem;
+}
+
+.section-5 button:hover {
+    background-color: #ba241e;
+}
+
+/* Footer Beginning */
+footer {
+    margin-top: 121px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer h4,
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer h4 {
+    margin-bottom: 24px;
+}
+
+footer .nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #514949;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.facebook-link {
+    color: #3b5998;
+    font-size: 20px;
+}
+
+.twitter-link {
+    color: #00acee;
+    font-size: 20px;
+}
+
+.copyright {
+    font-weight: bold;
+    margin-top: 56px;
+    padding: 32px 0 46px;
+    border-top: 0.7px solid #514949;
+}
+
+/* Footer End */
+
+@media screen and (min-width: 992px) {
+    .forum-box {
+        text-align: left;
+    }
+
+    .forum-box .about {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .details .people img {
+        width: 40px;
+    }
+
+    .forum-box .img {
+        margin-right: 2rem;
+    }
+
+    .user-comment {
+        display: flex;
+    }
+
+    .user-comment .image {
+        margin-right: 2rem;
+    }
+
+    .message {
+        display: flex;
+        align-items: center;
+    }
+
+    .message img {
+        margin: 0;
+    }
+
+    .message-box {
+        margin: 0 0 0 2rem !important;
+    }
+}

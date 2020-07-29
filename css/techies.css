@@ -1,15 +1,114 @@
+@font-face {
+    font-family: "Averta-Black";
+    src: url("../fonts/Averta.woff") format("woff"),
+        url("../fonts/Averta.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Averta-bold";
+    src: url("../fonts/Averta-Bold.woff") format("woff"),
+        url("../fonts/Averta-Bold.woff") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Averta-semiBold";
+    src: url("../fonts/Averta-Semibold-Italic.woff") format("woff"),
+        url("../fonts/Averta-Semibold-Italic.otf") format("opentype");
+    font-weight: 600;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+
+/* THIS IS THE HEADER SECTION */
+.headerSect {
+    background: rgba(242, 235, 233, 0.6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.headerP1 {
+    font-size: 14px;
+    color: #E7332B;
+    font-family: Averta;
+}
+
+.headerP2 {
+    font-family: Averta-Bold;
+    font-size: 32px;
+    color: #514949;
+}
+
+/* ######################## */
+
+
+/* TECHIES SECTION */
+.bg1 {
+    background-color: #DCF4F8;
+}
+
+.bg2 {
+    background-color: #FFE3E1;
+}
+
+.bg3 {
+    background-color: #F0DCF8;
+}
+
+.bg4 {
+    background-color: #F0F6F6;
+}
+
+.bg5 {
+    background-color: #EFFFF4;
+}
+
+.text1 {
+    font-size: 18px;
+    line-height: 28px;
+    height: 28px;
+    font-family: Averta-bold;
+}
+
+.text2 {
+    font-family: Averta-Black;
+}
+
+.text3 {
+    font-family: Averta-bold;
+    font-size: 18px;
+}
+
+.text4 {
+    font-family: Averta;
+    font-size: 16px;
+}
+
+
 /* NAVBAR LINK */
 .n-links {
     height: 20px;
     font-size: 16px;
     line-height: 19px;
-    color: #514949 !important;
+    color: #514949;
+    font-family: Averta-Black;
 }
 
 .n-links:hover {
-    color: #E7332B;
+    color: #E7332B !important;
 }
 
+@font-face {
+    font-family: 'myfont';
+    src: url("/fonts/Averta.woff");
+    font-style: normal;
+}
 
 
 /* IMAGE OVERLAY */
@@ -26,37 +125,98 @@
     transform: translate(-50%, -50%);
 }
 
+/* THIS STYLING IS FOR THE HEADERS */
+header {
+    font-family: myfont;
+    transition: all 0.5s;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+header .h-btn {
+    background: #E7332B;
+    border-radius: 0;
+}
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .image-sm {
-        width: 67%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 30px;
-    }
-
-    .heads {
-        font-size: 8px;
-        line-height: 14px;
-    }
-
-    .parag {
-        height: 64px;
-        font-size: 15px;
-        padding-bottom: 20px;
-    }
-
-    .bgImage {
-        height: 304px;
-        /* margin-left: auto;
-        margin-right: auto; */
-    }
-
-    .quoImage {
-        font-size: 112px;
+@media screen and (min-width: 1000px) {
+    header .h-btn {
+        margin-left: 100px;
     }
 }
 
-;
+/* ########################## */
+
+/* THIS STYLING IS FOR THE FOOTER */
+footer {
+    margin-top: 121px;
+    line-height: 20px;
+}
+
+footer h4,
+.copyright {
+    line-height: 24px;
+}
+
+footer h4 {
+    margin-bottom: 24px;
+}
+
+footer .nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #514949;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.facebook-link {
+    color: #3b5998 !important;
+    font-size: 20px;
+}
+
+.twitter-link {
+    color: #00acee !important;
+    font-size: 20px;
+}
+
+.copyright {
+    margin-top: 56px;
+    padding: 32px 0 46px;
+    border-top: 0.7px solid #514949;
+}
+
+
+
+/* ############################ */
+
+@media (min-width:480px) {
+    .footerCentre {
+        text-align: center !important;
+    }
+}
+
+.container {
+    max-width: 1238px !important;
+    overflow: hidden !important;
+}
+
+
+.bg {
+    background-image: url("../images/contact-form/bg.png");
+    background-size: cover;
+    padding-top: 10em;
+    padding-bottom: 10em;
+
+}
+
+.custom-btn {
+    background-color: #E7332B;
+    padding: 8px 20px !important;
+    /*text-align: center;*/
+    color: #ffff !important;
+    display: inline-block;
+
+}

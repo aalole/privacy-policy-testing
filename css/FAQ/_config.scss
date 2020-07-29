@@ -86,6 +86,14 @@ $home-img: $SecondaryColor;
   color: #514949;
 }
 
+@mixin h3 {
+  font-family: Averta-Bold;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+
 @mixin paragraph {
   font-family: Averta-Regular;
   font-size: 16px;

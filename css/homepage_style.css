@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Averta-Black";
+  src: url("../fonts/Averta.woff") format("woff"),
+    url("../fonts/Averta.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Averta-bold";
+  src: url("../fonts/Averta-Bold.woff") format("woff"),
+    url("../fonts/Averta-Bold.woff") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Averta-semiBold";
+  src: url("../fonts/Averta-Semibold-Italic.woff") format("woff"),
+    url("../fonts/Averta-Semibold-Italic.otf") format("opentype");
+  font-weight: 600;
+}
+
+
+#bgcolornavbar {
+  background-color: #F2EBE9;
+}
+
+button {
+  background-color: #E7332B;
+}
+
+button a {
+  color: #ffffff;
+}
+
+.jg {
+  width: 100%;
+  background-color: #F0F6F6;
+}
+
+button a:hover {
+  color: white;
+}
+
+#centered {
+  margin-top: 130px;
+}
+
+.jj:hover {
+  color: #E7332B !important;
+}
+
+div .red {
+  color: #E7332B;
+  font-size: 14px;
+}
+
+div .card-body h5 {
+  color: #514949;
+  font-size: 15px;
+}
+
+div .mentorparg {
+  font-size: 25px;
+  color: #514949;
+}
+
+.mobile {
+  display: none;
+}
+
+div .card-body .cardpfontsize {
+  font-size: 12px;
+}
+
+div .card-body .card-text {
+  font-size: 14px;
+}
+
+div .card-body .card-title {
+  color: #514949;
+}
+
+div .mentorspargfont {
+  font-size: 13px;
+  color: #514949;
+}
+
+nav .move {
+  display: flex;
+  justify-content: center;
+}
+
+.black {
+  background-color: #000000;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+@media (min-device-width:360px) and (max-width:640px) {
+  div .row #none {
+    display: none;
+  }
+
+  #centered {
+    margin-top: 50px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  #desktop3 {
+    display: none;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #desktop2 {
+    display: none;
+  }
+}
+
+body {
+  background-color: white;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+/* footer styles */
+footer {
+  margin-top: 121px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer h4,
+.copyright {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer h4 {
+  margin-bottom: 24px;
+}
+
+footer .nav-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: var(--primary-color);
+}
+
+footer .nav-link:hover {
+  text-decoration: underline;
+}
+
+.facebook-link {
+  color: var(--facebook-color);
+  font-size: 20px;
+}
+
+.twitter-link {
+  color: var(--twitter-color);
+  font-size: 20px;
+}
+
+.copyright {
+  font-weight: bold;
+  margin-top: 56px;
+  padding: 32px 0 46px;
+  border-top: 0.7px solid #514949;
+}
+
+/* end of footer styles */
+
+.container {
+  max-width: 1238px !important;
+  overflow: hidden !important;
+}
+
+
+.bg {
+  background-image: url("../images/contact-form/bg.jpg");
+  background-size: cover;
+  padding-top: 10em;
+  padding-bottom: 10em;
+
+}
+
+.custom-btn {
+  background-color: #E7332B;
+  padding: 8px 20px !important;
+  /*text-align: center;*/
+  color: #ffff !important;
+  display: inline-block;
+}
+
+/* THIS IS FOR THE HEADER */
+.headerBg {
+  background: rgba(242, 235, 233, 0.6);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.headerH4 {
+  color: #514949;
+  font-size: 32px;
+  font-family: Averta-Bold;
+}
+
+.headerBtn {
+  font-size: 16px;
+}
+
+.headerTag {
+  text-decoration: none !important;
+}
+
+.headerP {
+  color: #514949;
+  font-size: 16px;
+}
+
+/* ########################## */
+
+.carouselBtn {
+  background-color: #E7332B;
+  font-size: 16px;
+}
+
+.sectP {
+  font-size: 24px;
+  font-family: Averta-Bold;
+  color: #514949;
+}
+
+.sectBtn {
+  background-color: #E7332B;
+}
+
+.sectTag {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none !important;
+}
+
+.list {
+  font-size: 24px;
+  font-family: Averta-Bold;
+}

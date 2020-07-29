@@ -18,17 +18,28 @@
     font-weight: 600;
 }
 
-body {
+body,
+.enroll {
     width: 100%;
     background: #E5E5E5;
 }
 
 body .policy {
-    max-width: 90%;
+    max-width: 1238px;
     margin: 0 auto;
     font-family: "Averta-Regular";
     background: #fff;
     padding: 30px 50px
+}
+
+.enroll,
+.p-width {
+    max-width: 1238px;
+    margin: 0 auto;
+}
+
+.jj:hover {
+    color: #E7332B !important;
 }
 
 .policy h3,
@@ -39,11 +50,16 @@ header h3 {
     margin: 40px 0 20px 0;
     opacity: .9;
     text-transform: uppercase;
+    font-family: "Averta-Regular";
+}
+
+.up {
+    padding-top: 0!important;
 }
 
 header {
     padding-bottom: 40px;
-    background: #F2EBE9;
+    background: #F2EBE9 !important;
 }
 
 header p {
@@ -110,11 +126,56 @@ div ul li {
     padding: 7px 0;
 }
 
+.rm-footer-nav-padding li {
+    padding: 0 !important;
+}
+
+.rm-footer-nav-padding li a {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
 .policy ul>li:before {
     content: "-";
     margin-right: 10px;
     color: #E7332B;
 }
-.join:hover{
+
+.join:hover {
     color: #514949;
+}
+
+.custom-container {
+    padding: 0 !important;
+}
+
+.pad-sm {
+    margin-top: 0 !important;
+}
+
+.pad-sm p {
+    font-family: "Averta-Bold";
+    font-size: 32px;
+    line-height: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+    .custom-container {
+        padding: 0 !important;
+    }
+}
+
+.container {
+    max-width: 1238px !important;
+    overflow: hidden !important;
+}
+
+.twitter {
+    color: #00acee;
+}
+
+.fb {
+    color: #3b5998;
 }

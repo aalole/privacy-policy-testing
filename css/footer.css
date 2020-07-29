@@ -1,0 +1,88 @@
+:root {
+  --primary-font: "Averta", sans-serif;
+  --primary-color: #514949;
+  --secondary-color: #E7332B;
+  --form-border-color: #0B0B0B;
+  --banner-bg-color: #F2EBE9;
+  --facebook-color: #3b5998;
+  --twitter-color: #00acee;
+}
+@font-face {
+  font-family: 'myfont';
+  src: url("/fonts/Averta.woff");
+  font-style: normal;
+}
+* {
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: 121px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: myfont !important;
+
+}
+footer h4,
+.copyright {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: myfont !important;
+  color:#444444 !important;
+}
+
+footer h4 {
+  margin-bottom: 24px;
+}
+
+footer .nav-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: var(--primary-color);
+}
+
+footer .nav-link:hover {
+  text-decoration: underline;
+}
+fa-twitter{
+  fill: var(--twitter-color) !important;
+}
+.facebook-link {
+  color: var(--facebook-color) !important;
+  font-size: 20px;
+}
+
+.twitter-link {
+  color: var(--twitter-color) !important;
+  font-size: 20px;
+}
+
+.copyright {
+  font-weight: bold;
+  margin-top: 56px;
+  padding: 32px 0 46px;
+  border-top: 0.7px solid #514949;
+}
+
+@media screen and (max-width: 1000px ) {
+  .disp-2 {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 1000px ) {
+    .disp-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+    .disp-2 {
+        display: none;
+    }
+
+}

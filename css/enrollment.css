@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Averta';
+    src: url('../fonts/Averta.woff') format('woff'),
+        url('../fonts/Averta.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Averta-bold';
+    src: url('../fonts/Averta-Bold.woff') format('woff'),
+        url('../fonts/Averta-Bold.otf') format('opentype');
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Averta', 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.fonty {
+    font-family: Averta-bold;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.jj:hover {
+    color: #E7332B !important;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+/* Header Beginning */
+header {
+    background-color: #F2EBE9 !important;
+    transition: all 0.5s;
+}
+
+header .h-btn {
+    background: #E7332B;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    header .h-btn {
+        margin-left: 100px;
+    }
+}
+
+/* Header End */
+
+/* section 1 */
+
+
+.intro-text {
+    text-align: center;
+    padding: 2rem 0 5rem 0;
+    margin: auto;
+    max-width: 600px;
+}
+
+.intro-text p {
+    color: #E7332B;
+    font-size: 14px;
+}
+
+.intro-text h2 {
+    color: #514949;
+    font-weight: 600;
+    font-family: Averta-bold;
+    font-size: 32px;
+}
+
+/* section 2 */
+.section-2 {
+    margin-top: 5rem;
+}
+
+.form-container {
+    max-width: 610px;
+    margin: auto;
+}
+
+.form-group {
+    margin: 2rem 2%;
+}
+
+.form-group input,
+.form-group select {
+    border: 1px solid #0B0B10;
+    border-radius: 0;
+    padding: 1.4rem .5rem;
+}
+
+.form-group label {
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+/* select option */
+.select-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-box .options-container {
+    color: #666666;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    overflow: hidden;
+    border: 1px solid #0B0B10;
+
+    order: 1;
+}
+
+.selected {
+    margin-bottom: 8px;
+    color: #666666;
+    position: relative;
+    border: 1px solid #0B0B10;
+
+    order: 0;
+}
+
+.selected::after {
+    content: "";
+    background: url("../images/enrollment/arrow-down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    right: 3%;
+    top: 40%;
+
+    transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.select-box .options-container.active+.selected::after {
+    transform: rotateX(180deg);
+    top: 30%
+}
+
+.select-box .option,
+.selected {
+    padding: .7rem;
+    cursor: pointer;
+}
+
+.options-container .option {
+    padding: 0 .5rem;
+}
+
+.select-box .option label {
+    margin-bottom: 0;
+    padding: .7rem .5rem;
+}
+
+.select-box .option:hover {
+    background: #666666;
+    color: white;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+}
+
+/* radio button */
+/* The container */
+.level {
+    display: block;
+    font-size: 1.1rem;
+}
+
+.radios {
+    padding-left: 10%;
+    margin-top: 2rem;
+}
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1.1rem;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #E7332B;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #E7332B;
+}
+
+/* Form Button */
+.form-btn button {
+    background-color: #E7332B;
+    border: none;
+    color: white;
+    width: 152px;
+    padding: .7rem;
+}
+
+.form-btn button:hover {
+    background-color: white;
+    border: 1px solid #E7332B;
+    color: #E7332B;
+}
+
+/* section 3 */
+.section-3 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 5rem 0;
+    text-align: center;
+    background: url('../images/enrollment/black.min.png') no-repeat;
+    background-size: cover;
+}
+
+.section-3 h2 {
+    color: white;
+}
+
+.section-3 button {
+    background-color: #E7332B;
+    border: none;
+    color: white;
+    width: 152px;
+    padding: .8rem;
+}
+
+.section-3 button:hover {
+    background-color: #ba241e;
+}
+
+/* Footer Beginning */
+footer {
+    margin-top: 121px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer h4,
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer h4 {
+    margin-bottom: 24px;
+}
+
+footer .nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #514949;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.facebook-link {
+    color: #3b5998;
+    font-size: 20px;
+}
+
+.twitter-link {
+    color: #00acee;
+    font-size: 20px;
+}
+
+.copyright {
+    font-weight: bold;
+    margin-top: 56px;
+    padding: 32px 0 46px;
+    border-top: 0.7px solid #514949;
+}
+
+/* Footer End */
+
+@media screen and (min-width: 768px) {
+    .intro-text {
+        padding: 4rem 0 7rem 0;
+    }
+
+    .intro-text h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .section-2 {
+        margin-top: 6rem;
+    }
+
+    .section-3 {
+        margin: 10rem auto;
+    }
+}

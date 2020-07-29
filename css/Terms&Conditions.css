@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.terms-wrapper {
+    margin: 0 1rem;
+}
+
+.foo:hover {
+    color: black;
+}
+
+.jj:hover {
+    color: #E7332B !important;
+}
+
+@font-face {
+    font-family: "Averta-Black";
+    src: url("./fonts/Averta.woff") format("woff"),
+        url("./fonts/Averta.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Averta-bold";
+    src: url("./fonts/Averta-Black.otf") format("woff"),
+        url("./fonts/Averta-Bold-Italic.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Averta-Regular";
+    src: url("./fonts/Averta-Bold.woff") format("woff"),
+        url("./fonts/Averta-Bold.otf") format("opentype");
+    font-weight: 600;
+}
+
+.headings {
+    text-align: center;
+
+    margin: 0 auto;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.headings h3 {
+    color: #E7332B;
+    font-size: 14px;
+    font-family: Averta-Regular;
+}
+
+.headings h2 {
+    font-size: 32px;
+    line-height: 48px;
+
+    font-family: Averta-bold;
+}
+
+.sub-head {
+    max-width: 610px;
+    min-width: 100px;
+    margin: auto;
+}
+
+
+
+h4 {
+    color: #E7332B;
+    font-size: 14px;
+    margin-top: 3rem;
+    font-family: Averta-Regular;
+}
+
+h5,
+h6,
+dt,
+dd {
+    color: #514949;
+    font-family: Averta-Black;
+    font-weight: normal;
+}
+
+.why-wrapper {
+    max-width: 1244px;
+    min-width: 100px;
+
+}
+
+dd {
+    line-height: 32px;
+    font-size: 1rem;
+    /* text-align: justify; */
+}
+
+h5 {
+    opacity: 0.9;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.container {
+    max-width: 1238px;
+    overflow: hidden;
+}
