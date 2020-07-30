@@ -35,7 +35,7 @@
 
 <!-- Page Content -->
 
-<body>
+<body class="certificate">
     <section style="background: rgba(242, 235, 233, 0.6);; background-repeat: no-repeat; background-attachment: fixed; background-position:
         center center; background-size: cover;">
 
@@ -190,6 +190,7 @@
                                     <option value="+44">+44</option>
                                     <option value="+91">+91</option>
                                 </select>
+                                <p class="invalid-feedback" role="alert"></p>
                                 <input class="form-control" type="tel" name="phone-number"
                                     placeholder="Enter your phone number">
                             </div>
@@ -199,7 +200,7 @@
 
                 <!-- Submit Button -->
                 <div class="d-flex justify-content-end">
-                    <input class="btn btn-primary" type="submit" value="Request Certificate">
+                    <input class="btn btn-primary enrollBtn" type="submit" value="Request Certificate">
                 </div>
             </form>
         </section>
@@ -315,6 +316,7 @@
         crossorigin="anonymous"></script>
     <!-- Custom JS -->
     <script src="js/certificate-request.js"></script>
+    <script src="./js/form_validation.js"></script>
 </body>
 
 </html>

@@ -86,7 +86,7 @@ p {
     margin-bottom: 25px;
 }
 
-.form-control,
+/* .form-control, */
 .custom-select {
     height: 55px;
     padding-top: 14.5px;
@@ -144,6 +144,7 @@ header {
 .masthead {
     margin-bottom: 89px;
 }
+
 /* Masthead
 ------------------------------- */
 
@@ -271,4 +272,14 @@ a:hover {
 .container {
     max-width: 1238px !important;
     overflow: hidden !important;
+}
+
+.error {
+    color: red;
+    text-align: left;
+    font-size: 14px;
+}
+
+.errborder {
+    border: 1px solid #ff3361 !important;
 }
