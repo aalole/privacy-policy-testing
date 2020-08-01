@@ -1,71 +1,68 @@
-
 @font-face {
-    font-family: "Averta";
-    src: url("../fonts/Averta-Thin.woff") format("woff"),
-         url("../fonts/Averta-Thin.otf") format("opentype");
-    font-weight: 300;
+	font-family: "Averta";
+	src: url("../fonts/Averta-Thin.woff") format("woff"),
+		url("../fonts/Averta-Thin.otf") format("opentype");
+	font-weight: 300;
 }
 
 @font-face {
-    font-family: "Averta";
-    src: url("../fonts/Averta.woff") format("woff"),
-         url("../fonts/Averta.otf") format("opentype");
-    font-weight: normal;
+	font-family: "Averta";
+	src: url("../fonts/Averta.woff") format("woff"),
+		url("../fonts/Averta.otf") format("opentype");
+	font-weight: normal;
 }
 
 @font-face {
-    font-family: "Averta";
-    src: url("../fonts/Averta-Semibold.woff") format("woff"),
-         url("../fonts/Averta-Semibold.otf") format("opentype");
-    font-weight: 600;
+	font-family: "Averta";
+	src: url("../fonts/Averta-Semibold.woff") format("woff"),
+		url("../fonts/Averta-Semibold.otf") format("opentype");
+	font-weight: 600;
 }
 
 
 
-body{
-	font-family: Averta!important;
+body {
+	font-family: Averta !important;
 	/*overflow-x: hidden;*/
 }
 
-*, a{
+*,
+a {
 	color: #514949;
 	/*font-family: "Averta";*/
 }
 
-input, textarea{
-	border-radius: 0!important;
-	border: 1px solid rgba(81, 73, 73, 0.5)!important;
+input,
+textarea {
+	border-radius: 0 !important;
+	/* border: 1px solid rgba(81, 73, 73, 0.5)!important; */
 }
 
-header{
+header {
 	background: #f2ebe9;
 	/*padding-bottom: 26em!important; */
 }
-.contact{
-	/*margin-top: -22em;*/
-	/*position: relative;
-	bottom: 22em;*/
-}
-.custom-btn{
+
+.custom-btn {
 	background-color: #E7332B;
-	padding: 8px 20px!important;
+	padding: 8px 20px !important;
 	/*text-align: center;*/
-	color: #ffff!important;
+	color: #ffff !important;
 	display: inline-block;
 }
 
-.contact-form__heading-1{
+.contact-form__heading-1 {
 	/*font-size: 32px;*/
 	padding-top: 4em;
 	padding-bottom: 7em;
 }
 
 
-.custom-btn1{
-	padding: 5px 30px!important;
+.custom-btn1 {
+	padding: 5px 30px !important;
 }
 
-.form{
+.form {
 	/*margin-top: 5em;*/
 	height: 100%;
 	display: flex;
@@ -73,84 +70,71 @@ header{
 	justify-content: space-between;
 }
 
-.custom-textarea{
-	height: 285px!important;
+.custom-textarea {
+	height: 285px !important;
 }
 
-.contact-form{
-	/*flex-direction: column;*/
-	/*align-items: flex-end;*/
-	/*justify-content: space-between;*/
-}
 
-.contact-form__form{
-	/*align-self: ;*/
-}
-
-.contact-form__location{
+.contact-form__location {
 	flex-direction: column;
 	/*align-items: flex-end;*/
 	justify-content: space-between;
 	/*overflow: hidden;*/
 }
 
-.bg{
+.bg {
 	background-image: url("../images/contact-form/bg.png");
 	background-size: cover;
-	padding-top: 10em; 
+	padding-top: 10em;
 	padding-bottom: 10em;
 
 }
 
-.footer-flex{
-	/*justify-content: space-between;*/
-}
-
-.mobile-footer h5{
-		font-size: 14px;
+.mobile-footer h5 {
+	font-size: 14px;
 }
 
 header .h-btn {
-    background: #E7332B;
-    border-radius: 0;
+	background: #E7332B;
+	border-radius: 0;
 }
 
 
 footer {
-    margin-top: 121px;
-    font-size: 14px;
-    line-height: 20px;
+	margin-top: 121px;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 footer h4,
 .copyright {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 footer h4 {
-    margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 footer .nav-link {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    color: #514949;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: #514949;
 }
 
 footer .nav-link:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
-.facebook-link span{
-    color: #3b5998;
-    font-size: 20px;
+.facebook-link span {
+	color: #3b5998;
+	font-size: 20px;
 }
 
-.twitter-link span{
-    color: #00acee;
-    font-size: 20px;
+.twitter-link span {
+	color: #00acee;
+	font-size: 20px;
 }
 
 /*.copyright {
@@ -160,93 +144,88 @@ footer .nav-link:hover {
     border-top: 0.7px solid #514949;
 }*/
 
-@media screen and (min-width: 1000px ) {
-    header .h-btn {
-        margin-left: 130px;
-    }
+@media screen and (min-width: 1000px) {
+	header .h-btn {
+		margin-left: 130px;
+	}
 }
 
 
 
 
 @media only screen and (max-width: 576px) {
-	.container-btn{
-		text-align: center!important;
+	.container-btn {
+		text-align: center !important;
 	}
 
-	.contact-form__heading h2{
+	.contact-form__heading h2 {
 		font-size: 18px
 	}
 
-	*{
+	* {
 		font-size: 16px;
 	}
 
-	header{
+	header {
 		background: #f2ebe9;
-		padding-bottom: 0!important; 
-	}
-	.contact{
-		/*position: relative;
-		bottom: 0;*/
-		/*margin-top: 0*/
-
-	}
-	
-	.custom-textarea{
-		height: 80px!important;
+		padding-bottom: 0 !important;
 	}
 
-	.logo img{
+	.custom-textarea {
+		height: 80px !important;
+	}
+
+	.logo img {
 		width: 70%
 	}
 
-	.contact-form__heading-1 h2{
+	.contact-form__heading-1 h2 {
 		font-size: 18px
 	}
 
-	.form{
+	.form {
 		margin-top: 5em;
 
 	}
 
-	.bg{
+	.bg {
 		padding: 2em 1em;
 	}
 
-	.bg h3{
+	.bg h3 {
 		font-size: 14px
 	}
-	.mobile-footer h5{
+
+	.mobile-footer h5 {
 		font-size: 14px
 	}
 }
 
 
 
-@media only screen and (max-width: 768px) and (min-width: 577px){
-	.custom-textarea{
-		height: 100px!important;
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+	.custom-textarea {
+		height: 100px !important;
 	}
 
-	.custom-btn{
+	.custom-btn {
 		background-color: #E7332B;
-		padding: 8px 10px!important;
+		padding: 8px 10px !important;
 		/*text-align: center;*/
-		color: #ffff!important;
+		color: #ffff !important;
 		/*font-size: 10px;*/
 		display: inline-block;
 	}
 
-	.custom-btn1{
-		padding: 5px 30px!important;
+	.custom-btn1 {
+		padding: 5px 30px !important;
 	}
 
-	*{
+	* {
 		font-size: 10px;
 	}
 
-	.logo img{
+	.logo img {
 		width: 50%
 	}
 }
@@ -254,16 +233,14 @@ footer .nav-link:hover {
 
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
-	.custom-textarea{
-		height: 125px!important;
+	.custom-textarea {
+		height: 125px !important;
 	}
 }
 
 
 
-@media only screen and (max-width: 1200px) {
-
-}
+@media only screen and (max-width: 1200px) {}
 
 
 
