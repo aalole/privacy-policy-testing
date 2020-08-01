@@ -1,88 +1,172 @@
-:root {
-  --primary-font: "Averta", sans-serif;
-  --primary-color: #514949;
-  --secondary-color: #E7332B;
-  --form-border-color: #0B0B0B;
-  --banner-bg-color: #F2EBE9;
-  --facebook-color: #3b5998;
-  --twitter-color: #00acee;
-}
+
 @font-face {
-  font-family: 'myfont';
-  src: url("/fonts/Averta.woff");
-  font-style: normal;
-}
-* {
-
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    font-family: "Averta";
+    src: url("../fonts/Averta-Thin.woff") format("woff"),
+         url("../fonts/Averta-Thin.otf") format("opentype");
+    font-weight: 300;
 }
 
-footer {
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta.woff") format("woff"),
+         url("../fonts/Averta.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Semibold.woff") format("woff"),
+         url("../fonts/Averta-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+
+
+body{
+  font-family: Averta!important;
+  /*overflow-x: hidden;*/
+}
+
+
+
+.custom-btn{
+  background-color: #E7332B;
+  padding: 8px 20px!important;
+  /*text-align: center;*/
+  color: #ffff!important;
+  display: inline-block;
+}
+
+
+
+.mobile-footer h5{
+    font-size: 14px;
+}
+
+
+
+footer{
   margin-top: 121px;
   font-size: 14px;
-  line-height: 20px;
-  font-family: myfont !important;
-
+  line-height: 20px!important;
 }
+footer ul li a{
+    line-height: 20px!important;
+    font-size: 14px!important;
+}
+
 footer h4,
-.copyright {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: myfont !important;
-  color:#444444 !important;
+.footer-copyright {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 footer h4 {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
+}
+footer li a{
+  color: #514949!important;
 }
 
-footer .nav-link {
+.footer-link {
   padding-top: 4px;
   padding-bottom: 4px;
-  color: var(--primary-color);
+  color: #514949!important;
 }
 
 footer .nav-link:hover {
   text-decoration: underline;
 }
-fa-twitter{
-  fill: var(--twitter-color) !important;
-}
-.facebook-link {
-  color: var(--facebook-color) !important;
-  font-size: 20px;
+
+footer li{
+  padding: 0!important
 }
 
-.twitter-link {
-  color: var(--twitter-color) !important;
-  font-size: 20px;
+.facebook-link span{
+    color: #3b5998;
+    font-size: 20px;
 }
 
-.copyright {
-  font-weight: bold;
-  margin-top: 56px;
-  padding: 32px 0 46px;
-  border-top: 0.7px solid #514949;
+.twitter-link span{
+    color: #00acee;
+    font-size: 20px;
 }
 
-@media screen and (max-width: 1000px ) {
-  .disp-2 {
-      display: none;
+.bg{
+  background-image: url("../images/footer/bg.png");
+  background-size: cover;
+  padding-top: 10em; 
+  padding-bottom: 10em;
+
+}
+
+.enroll h3{
+  font-size: 1.75rem!important;
+}
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+  .bg{
+    padding: 2em 1em;
+  }
+
+  .bg h3{
+    font-size: 14px
+  }
+  .mobile-footer h5{
+    font-size: 14px
+  }
+  .enroll-child{
+    padding-left:15px!important; 
+    padding-right:15px!important; 
+  }
+  .enroll h3{
+    font-size: 0.9rem!important;
   }
 }
 
-@media screen and (min-width: 1000px ) {
-    .disp-1 {
-        display: none;
-    }
+
+
+@media only screen and (max-width: 768px) and (min-width: 577px){
+  
+
+  .custom-btn{
+    background-color: #E7332B;
+    padding: 8px 10px!important;
+    /*text-align: center;*/
+    color: #ffff!important;
+    /*font-size: 10px;*/
+    display: inline-block;
+  }
+
+  .custom-btn1{
+    padding: 5px 30px!important;
+  }
+
+  footer{
+    font-size: 10px;
+  }
+
+  .logo img{
+    width: 50%
+  }
 }
 
-@media screen and (max-width: 1000px ) {
-    .disp-2 {
-        display: none;
-    }
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .custom-textarea{
+    height: 125px!important;
+  }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
 
 }
+

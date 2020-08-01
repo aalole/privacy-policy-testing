@@ -192,3 +192,10 @@ header .h-btn {
          /* width: 50%;   */     /* Remove this property it's not needed */
      }
   }
+
+  .container {
+    max-width: 1238px !important;
+    overflow: hidden !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}

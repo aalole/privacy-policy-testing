@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: "Averta";
+    font-family: "Averta-bold";
     src: url("../fonts/Averta-Bold.woff") format("woff"),
         url("../fonts/Averta-Bold.otf") format("opentype");
     font-weight: bold;
@@ -86,7 +86,13 @@ p {
     margin-bottom: 25px;
 }
 
-/* .form-control, */
+.headerP1 {
+    font-size: 14px;
+    color: #E7332B;
+    font-family: Averta-bold;
+}
+
+.form-control,
 .custom-select {
     height: 55px;
     padding-top: 14.5px;
@@ -272,14 +278,6 @@ a:hover {
 .container {
     max-width: 1238px !important;
     overflow: hidden !important;
-}
-
-.error {
-    color: red;
-    text-align: left;
-    font-size: 14px;
-}
-
-.errborder {
-    border: 1px solid #ff3361 !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }

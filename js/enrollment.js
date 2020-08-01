@@ -35,8 +35,7 @@ function closeNav() {
   backdrop.style.display = "none";
 }
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-
+// form validation
 
 (function () {
   "use strict";
@@ -45,7 +44,7 @@ function closeNav() {
   $(function () {
     // Bootstrap form validation
     // Fetch the form to apply custom Bootstrap validation style to
-    var forms = document.getElementsByClassName("cert-request");
+    var forms = document.getElementsByClassName("enroll");
 
     // Loop over it and prevent submission
     var validation = Array.prototype.filter.call(forms, function (form) {
@@ -63,3 +62,7 @@ function closeNav() {
     });
   }); // jQuery document ready function
 })(); // Immediately Invoked Function Expression (IIFE)
+
+
+const formSubmitBtn = document.querySelector(".enrollBtn");
+formSubmitBtn.addEventListener("click", () => {});

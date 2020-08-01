@@ -1,14 +1,14 @@
 /*general styling*/
 
 @font-face {
-    font-family: "Averta-Black";
+    font-family: "Averta-Regular";
     src: url("../fonts/Averta.woff") format("woff"),
         url("../fonts/Averta.otf") format("opentype");
     font-weight: 300;
 }
 
 @font-face {
-    font-family: "Averta-bold";
+    font-family: "Averta-Bold";
     src: url("../fonts/Averta-Bold.woff") format("woff"),
         url("../fonts/Averta-Bold.woff") format("opentype");
     font-weight: normal;
@@ -21,7 +21,16 @@
     font-weight: 600;
 }
 
+@font-face {
+    font-family: "Averta-Black";
+    src: url("../fonts/Averta-Black.woff") format("woff"),
+        url("../fonts/Averta-Black.otf") format("opentype");
+    font-weight: 600;
+}
 
+:root {
+    font-size: 16px;
+}
 
 body {
     margin: 0;
@@ -192,7 +201,7 @@ main {
     color: #fff !important;
 }
 
-.home31-box small:hover{
+.home31-box small:hover {
     color: white !important;
 }
 
@@ -231,8 +240,19 @@ footer {
 
 }
 
-.home32-cont h4 {
-    font-weight: 600;
+.course-title {
+    font-family: 'Averta-Bold';
+    font-size: 1.125rem;
+    color: #514949;
+    ;
+
+}
+
+.course-text {
+    font-family: 'Averta-Regular';
+    font-size: 1em;
+    color: #514949;
+    ;
 }
 
 .home32-btns {
@@ -295,15 +315,17 @@ footer {
 }
 
 .intro-txt1 {
-    font-size: 14px;
+    font-size: 16px;
     color: #E7332B;
-    font-family: Averta;
+    font-family: "Averta-Regular";
+    font-weight: 600;
 }
 
 .intro-txt2 {
-    font-family: Averta-Bold;
+    font-family: 'Averta-Bold';
     font-size: 32px;
     color: #514949;
+    font-weight: 500;
 }
 
 /* media for medium screens*/
@@ -348,7 +370,7 @@ footer {
     }
 }
 
-@font-face {
+/* @font-face {
     font-family: "Averta-Black";
     src: url("../fonts/Averta.woff") format("woff"),
         url("../fonts/Averta.otf") format("opentype");
@@ -367,20 +389,37 @@ footer {
     src: url("../fonts/Averta-Semibold-Italic.woff") format("woff"),
         url("../fonts/Averta-Semibold-Italic.otf") format("opentype");
     font-weight: 600;
-}
+} */
 
 
 .container {
     max-width: 1238px !important;
     overflow: hidden !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }
 
 /* Bootstrap code for nav section */
 
-.sub-title{
-    color:  #514949;
-   font-weight: 600;
-   font-size: 18px;
+.sub-title {
+    color: #514949;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.track-title{
+    font-family: 'Averta-Bold';
+    font-weight: 500;
+    color: #514949;
+    font-size: 1.5rem;
+}
+
+.track-text{
+    font-family: 'Averta';
+    font-size: 1.125rem;
+    color: #444444;
+    font-size: 18px;
 }
 
 .card-header{
@@ -388,24 +427,36 @@ footer {
     cursor: pointer;
 }
 
-.card-header:hover{
+.card-header:hover {
     background-color: #E7332B !important;
     color: #fff !important;
 }
 
-.sub-title:active, .sub-title:hover{
+.sub-title:active,
+.sub-title:hover {
     color: #fff !important;
 }
 
-.fa-angle-down{
+.fa-angle-down {
     color: #fff;
     font-weight: 900;
 }
 
-.card-body{
+.card-body {
     background-color: white;
 }
-.list-div{
-    background-color:  #EFFFF4;
+
+.list-div {
+    background-color: #EFFFF4;
     font-size: 18px;
 }
+
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

@@ -14,7 +14,10 @@
   <meta name="googlebot" content="FOLLOW" />
   <META NAME="geo.region" CONTENT="Nigeria S/W">
   <meta http-equiv="content-Type" content="text/html; charset=iso-8859-1" />
-
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <!-- homepage_style.css -->
@@ -26,14 +29,20 @@
   <link rel="stylesheet" href="./css/footer.css">
 
   <link rel="stylesheet" href="./css/header.css">
-  <!-- bootstrap cdn -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
   <!-- AOS animations cdn -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Above is the AOS animation cdn -->
+
+
+   <!--Flickty CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <!--Flickty CSS -->
   <title></title>
+
+  <title>StartNG |Homepage</title>
+
 </head>
 
 <body>
@@ -82,37 +91,47 @@
 
     <div class="container">
       <div class="row">
-        <div id="centered" class="col-md-5 offset-md-1">
-          <h4 class="pl-3 pr-5 headerH4">Gain enough Knowledge to help scale through the
+        <div id="centered" class="col-md-5">
+          <h4 class="pr-5 headerH4">Gain enough Knowledge to help scale through the
             tech industry
-            <br> for free.</h4>
-          <p class="pt-3 pb-5 headerP pl-3 pr-5">I should be incapable of drawing a single stroke at the
+            for free.</h4>
+          <p class="pt-3 pb-5 header pr-5">I should be incapable of drawing a single stroke at the
             present moment; and yet I feel that I never was a greater artist than now.</p>
-          <div class="container d-flex">
+          <div class="">
             <button type="button" name="button" class="rounded-0 pl-3 headerBtn pr-3 pt-2 pb-2 border-0"><a
                 class="headerTag" href="./enrollment.html">Enroll
                 Today</a></button>
           </div>
 
         </div>
-        <div class="col-md-6 pt-5 d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
-          <img id="none" class="img-fluid" src="images/homepage/Rectangle 22.png" width="70%" alt="">
+        <div class="col-md-6 pt-5 ml-5 d-flex justify-content-end aos-init aos-animate">
+          <div class="col custom-col-6 pt-5">
+<img src="images/homepage/1.jpg" class="img-fluid">
+<img src="images/homepage/2.jpg" class="img-fluid">
+<img src="images/homepage/3.jpg" class="img-fluid">
+          </div>
+          <div class="col custom-col-6">
+<img src="images/homepage/4.jpg" class="img-fluid">
+<img src="images/homepage/5.jpg" class="img-fluid">
+<img src="images/homepage/6.jpg" class="img-fluid">
+            
+          </div>
         </div>
       </div>
     </div>
     <div class="container pb-5">
-        <div class="row">
-          <div class="col-xs-4 d-flex justify-content-center pl-2 pt-4">
-              <a href="#"><img width="80%" src="images/homepage/Vector (4).png" alt=""></a>
-              </div>
-        <div class="col-xs-4 d-flex justify-content-center pt-4">
-              <a href="#"><img width="80%" src="images/homepage/Vector (2).png" alt=""></a>
-              </div>
-        <div class="col-xs-4 d-flex justify-content-center pt-4">
-              <a href="#"><img width="80%" src="images/homepage/Vector (3).png" alt=""></a>
-          </div>
+      <div class="row">
+        <div class="col-xs-4 d-flex justify-content-center pl-1 pt-4">
+          <a href="#"><img width="80%" src="images/homepage/Vector (4).png" alt=""></a>
         </div>
+        <div class="col-xs-4 d-flex justify-content-center pt-4">
+          <a href="#"><img width="80%" src="images/homepage/Vector (2).png" alt=""></a>
         </div>
+        <div class="col-xs-4 d-flex justify-content-center pt-4">
+          <a href="#"><img width="80%" src="images/homepage/Vector (3).png" alt=""></a>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -123,7 +142,7 @@
       <div class="row">
         <div class="col-md-6">
           <p style="font-size: 14px;" class="pt-5 pb-2 red">WHY STARTNG</p>
-          <h5 class="pb-2" style="color:#514949; font-size: 24px;">At startNG, you gain access to enough knowledge to
+          <h5 class="pb-2 pp">At startNG, you gain access to enough knowledge to
             introduce and aid
             your success in the tech industry.</h5>
           <p style="font-size:16px; color:#514949;">I should be incapable of drawing a single stroke at the present
@@ -134,27 +153,24 @@
       <!-- ======================================= This only appear on mobile screens====================================== -->
       <div id="carouselExampleIndicators" class="carousel slide mobile" data-ride="carousel" data-aos="fade-up"
         data-aos-duration="2000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
+        
+        <div >
 
-          <div class="carousel-item active">
-            <div class="card" style="width: 20em; background-color:#F0F6F6;">
+        <div class="main-carousel" data-flickity='{ "center-left": true ,"autoPlay":true, "contain": true, "groupCells": true  }'>
+            
+            
+          <div class="carousel-cell">
+            <div class="card" style="width: 20em; background-color:#F2EBE9;">
               <div class="pt-4 pl-3 pb-5">
-                <img width="10%" src="images/homepage/iwwa_remote-control-o.png" alt=""></div>
-              <div class="card-body ">
-                <p class="card-title pb-4">Fully Remote</p>
+                <img width="10%" src="images/homepage/iwwa_remote-control-o.png" alt="">
+                <div class="card-body ">
+                  <p class="card-title">Fully Remote</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-cell">
             <div class="card" style="width: 20em; background-color:#F2EBE9;">
               <div class="pt-4 pl-3 pb-5">
                 <img width="10%" src="images/homepage/clarity_briefcase-line.png" alt="">
@@ -165,7 +181,7 @@
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-cell">
             <div class="card" style="width: 20em; background-color:#DCF4F8;">
               <div class="pt-4 pl-3 pb-5">
                 <img width="10%" src="images/homepage/carbon_network-1.png" alt="">
@@ -176,18 +192,18 @@
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-cell">
             <div class="card" style="width: 20em; background-color:#FFE3E1;">
               <div class="pt-4 pl-3 pb-5">
                 <img width="10%" src="images/homepage/clarity_atom-line.png" alt="">
                 <div class="card-body ">
-                  <p class="card-title pb-4">Real-life Projects</p>
+                  <p class="card-title">Real-life Projects</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-cell">
             <div class="card" style="width: 20em; background-color:#F0DCF8;">
               <div class="pt-4 pl-3 pb-5">
                 <img width="10%" src="images/homepage/clarity_user-line.png" alt="">
@@ -198,25 +214,18 @@
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-cell">
             <div class="card" style="width: 20em; background-color:#EFFFF4;">
               <div class="pt-4 pl-3 pb-5">
                 <img width="10%" src="images/homepage/clarity_users-outline-alerted.png" alt="">
                 <div class="card-body ">
-                  <p class="card-title pb-4">Mentorship</p>
+                  <p class="card-title">Mentorship</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        </div>
+         
         </div>
       </div>
 
@@ -231,17 +240,17 @@
       <!-- =====================This only appears 0n desktop and tablet screen============================ -->
       <div class="container">
         <div class="row">
-          <div id="desktop" class="row pt-5 pb-5" data-aos="fade-down-left" data-aos-duration="2000">
-            <div class="col-md-2 col-sm-4  pt-2">
+          <div id="desktop" class="row pt-5 pb-5" data-aos="fade-down" data-aos-duration="2000">
+            <div class="col-md-4 pt-2 card-container">
               <div class="card jg">
                 <div class="pt-4 pl-3 pb-5">
                   <img width="20%" src="images/homepage/iwwa_remote-control-o.png" alt=""></div>
                 <div class="card-body ">
-                  <p class="card-title pb-4">Fully Remote</p>
+                  <p class="card-title">Fully <br>Remote</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-2  pt-2">
+            <div class="col-md-4 pt-2 card-container">
               <div class="card" style="width: 100%; background-color:#F2EBE9;">
                 <div class="pt-4 pl-3 pb-5">
                   <img width="20%" src="images/homepage/clarity_briefcase-line.png" alt="">
@@ -249,11 +258,10 @@
 
                 <div class="card-body">
                   <p class="card-title">Hands-on Experience</p>
-
                 </div>
               </div>
             </div>
-            <div class="col-md-2  pt-2">
+            <div class="col-md-4 pt-2 card-container">
               <div class="card" style="width: 100%; background-color:#DCF4F8;">
                 <div class="pt-4 pl-3 pb-5">
                   <img width="20%" src="images/homepage/carbon_network-1.png" alt="">
@@ -264,28 +272,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2  pt-2">
+            <div class="col-md-4 pt-2 card-container">
               <div class="card" style="width: 100%; background-color:#FFE3E1;">
                 <div class="pt-4 pl-3 pb-5">
                   <img width="20%" src="images/homepage/clarity_atom-line.png" alt="">
                 </div>
                 <div class="card-body">
-                  <p class="card-title pb-4">Real-life Projects</p>
+                  <p class="card-title">Real-life <br>Projects</p>
 
                 </div>
               </div>
             </div>
-            <div class="col-md-2  pt-2">
+            <div class="col-md-4 pt-2 card-container">
               <div class="card" style="width: 100%; background-color:#F0DCF8;">
                 <div class="pt-4 pl-3 pb-5">
                   <img width="20%" src="images/homepage/clarity_user-line.png" alt="">
                 </div>
                 <div class="card-body">
-                  <p class="card-title">Beginner Friendly</p>
+                  <p class="card-title">For <br>Beginners </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-2  pt-2">
+            <div class="col-md-4 pt-2 card-container">
               <div class="card" style="width: 100%; background-color:#EFFFF4;">
                 <div class="pt-4 pl-3 pb-5">
                   <img width="20%" src="images/homepage/clarity_users-outline-alerted.png" alt="">
@@ -308,8 +316,6 @@
       </div>
 
       <!-- ====================================The upper codes only appear only desktop screens========================================= -->
-
-
   </section>
   <section>
     <div style="background-color:#F2EBE9;">
@@ -319,7 +325,7 @@
             <p class="pt-5 red">SCOPE OF PROGRAM</p>
           </div>
           <div class="col-md-6">
-            <p class="sectP">Here is the list of
+            <p class="sectP pp">Here is the list of
               areas that will be explored in
               <br> training.</p>
           </div>
@@ -337,14 +343,9 @@
         <!-- ===========================================This appears only on mobile screens=========================================== -->
         <div id="carouselExampleIndicators" class="carousel slide mobile" data-ride="carousel" data-aos="fade-up"
           data-aos-duration="2000">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          
+          <div class="main-carousel" data-flickity='{ "center-left": true ,"autoPlay":true, "contain": true, "groupCells": true  }'>
+            <div class="carousel-cell active">
               <div class="card" style="width: 20rem;">
                 <div class="card-body">
                   <h5 style="font-family: Averta-Bold;" class="card-title">Frontend Development</h5>
@@ -355,7 +356,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-cell">
               <div class="card" style="width: 20rem;">
                 <div class="card-body">
                   <h5 class="card-title">Backend Development</h5>
@@ -366,7 +367,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-cell">
               <div class="card" style="width: 20rem;">
                 <div class="card-body">
                   <h5 class="card-title">UX/UI Design</h5>
@@ -377,7 +378,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-cell">
               <div class="card" style="width: 20rem;">
                 <div class="card-body">
                   <h5 class="card-title">Mobile Development</h5>
@@ -389,14 +390,7 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          
         </div>
 
         <div class="mobile">
@@ -509,11 +503,11 @@
     </section> -->
 
     <section class="mt-5 enroll">
-      <div class="container mb-5">
+      <div class="container mb-5 enroll-child">
         <div class="row">
           <div class="col-md-12 text-center">
             <div class="bg">
-              <h3 class="mb-5  text-white">Break into the tech industry like a Pro</h3>
+              <h3 class="mb-5 text-white">Break into the tech industry like a Pro</h3>
               <a href="./enrollment.html" class=" custom-btn text-decoration-none" type="button">Enroll Today</a>
             </div>
           </div>
@@ -524,96 +518,212 @@
     <!-- ################################################################# -->
     <!-- ################################################################# -->
 
-    <!-- ==========================The code above appears on all screens=============================== -->
 
 
-
-    <!-- Footer Section -->
-    <footer class="container">
-      <div class="row">
-        <div class="col-sm-6 col-lg-2 pb-4">
-          <a href="#"><img src="images/Header/header-img.png" alt="logo"></a>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="col-sm-6 col-lg-3 pb-4">
-          <h4>Quick Links</h4>
-          <ul class="navbar-nav">
-            <div class="row">
-              <div class="col-6">
-
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                <li class="nav-item"><a class="nav-link" href="curriculum-v1.html">Curriculum</a></li>
-                <li class="nav-item"><a class="nav-link" href="mentors.html">Mentors</a></li>
-                <li class="nav-item"><a class="nav-link" href="certificate-request.html">Request Certificates</a></li>
+    <!-- footer for desktop -->
+    <footer class="footer mt-5 d-none d-md-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-between">
+              <div class="logo">
+                <a class=" logo" href="#">
+                  <img src="images/contact-form/logo.png" alt="logo">
+                </a>
               </div>
-              <div class="col-6">
-                <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="pastTechies.html">Previous Techies</a></li>
-                <li class="nav-item"><a class="nav-link" href="past_project.html">Past Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
-                <li class="nav-item"><a class="nav-link" href="policy.html">Privacy Policy</a></li>
-                <li class="nav-item"><a class="nav-link" href="Terms&Conditions.html">Terms and Conditions</a></li>
+              <div class=" ">
+                <h5 class="font-weight-bold">Quick links</h5>
+                <div class="d-flex justify-content-end">
+                  <ul class="nav nav-pills flex-column mr-5   mt-3">
+                    <li class="nav-item">
+                      <a class="nav-link p-0 " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0 " href="about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0 " href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0" href="curriculumn-v1.html">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0" href="mentors.html">Mentors</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0" href="certificate.html">Request Certificates</a>
+                    </li>
+
+                  </ul>
+                  <ul class="nav nav-pills flex-column   mt-3">
+                    <li class="nav-item">
+                      <a class="nav-link p-0 " href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0 " href="pastTechies.html">Previous Techies</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0 " href="past_project.html">Past Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0" href="forum.html">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0" href="policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link p-0" href="Terms&Conditions.html">Terms and Conditions</a>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+              <div class="">
+                <h5 class="font-weight-bold">Contact us</h5>
+                <p class=" mt-3">
+                  <a href="#" class="text-dark">Hello@start.ng</a>
+                </p>
+              </div>
+              <div class="">
+                <h5 class="font-weight-bold">Office Address</h5>
+                <p class=" mt-3">
+                  92, Wolverine Avenue, Ikeja.<br>
+                  Lagos State, Nigeria
+                </p>
+              </div>
+              <div class="">
+                <h5 class="font-weight-bold">Follow us</h5>
+                <div class="mt-3">
+                  <a href="#" class="text-decoration-none inline-block mr-3">
+                    <img src="images/Contact-form/facebook.png">
+                  </a>
+                  <a href="#" class="text-decoration-none inline-block ">
+                    <img src="images/Contact-form/twitter.png">
+                  </a>
+                </div>
+
               </div>
             </div>
-          </ul>
-        </div>
-
-        <!-- Contact Us -->
-        <div class="col-sm-6 col-lg-2 pb-4">
-          <h4>Contact Us</h4>
-          <div>Hello@start.ng</div>
-        </div>
-
-        <!-- Office Address -->
-        <div class="col-sm-6 col-lg-3 pb-4">
-          <h4>Office Address</h4>
-          <address>
-            <p>92 Wolverine Avenue,<br>
-              Ikeja,<br>
-              Lagos State, Nigeria.
-            </p>
-          </address>
-        </div>
-
-        <!-- Follow Us -->
-        <div class="col-lg-2 pb-4">
-          <h4>Follow Us</h4>
-
-          <a class="facebook-link d-inline-block mr-3" href="https://www.facebook.com" target="_blank">
-            <span>
-              <span class="fab fa-facebook-square" aria-hidden="true"></span>
-              <span class="sr-only">Facebook</span>
-            </span>
-          </a>
-
-          <a class="twitter-link d-inline-block" href="https://www.twitter.com" target="_blank">
-            <span>
-              <span class="fab fa-twitter" aria-hidden="true"></span>
-              <span class="sr-only">Twitter</span>
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="row">
-        <div class="copyright col-12">
-          <p class="text-center"> &copy; 2020 StartNG</p>
+            <hr>
+            <div class="section-bottom">
+              <div class="col-12 py-2 text-center">
+                <p class="footer-copyright">
+                  &copy 2020 StartNG
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
-    <!-- ==========================End of Footer Section================================ -->
+    <!-- footer for mobile -->
+    <footer class="d-md-none d-block">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row mobile-footer">
+              <div class="col-6">
+                <h5 class="font-weight-bold">Quick links</h5>
+                <ul class="nav nav-pills flex-column mr-5   mt-3">
+                  <li class="nav-item">
+                    <a class="nav-link p-0 " href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 " href="about-us.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 " href="courses.html">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="curriculumn-v1.html">Curriculum</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="mentors.html">Mentors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="certificate.html">Request Certificates</a>
+                  </li>
 
+                </ul>
+                <ul class="nav nav-pills flex-column   mt-3">
+                  <li class="nav-item">
+                    <a class="nav-link p-0 " href="FAQ.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 " href="pastTechies.html">Previous Techies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0 " href="past_project.html">Past Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="forum.html">Forum</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="policy.html">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-0" href="Terms&Conditions.html">Terms and Conditions</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col-6">
+                <div class="">
+                  <h5 class="font-weight-bold">Contact us</h5>
+                  <p>
+                    <a href="#" class="text-dark">Hello@start.ng</a>
+                  </p>
+                </div>
+                <div class="">
+                  <h5 class="font-weight-bold">Office Address</h5>
+                  <p>
+                    92, Wolverine Avenue, Ikeja.<br>
+                    Lagos State, Nigeria
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-6">
+                <a class=" logo" href="#">
+                  <img src="images/contact-form/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="col-6">
+                <h5 class="font-weight-bold">Follow us</h5>
+                <a href="#" class="text-decoration-none inline-block mr-3">
+                  <img src="images/Contact-form/facebook.png">
+                </a>
+                <a href="#" class="text-decoration-none inline-block ">
+                  <img src="images/Contact-form/twitter.png">
+                </a>
+              </div>
+
+            </div>
+            <hr>
+            <div class="section-bottom">
+              <div class="col-12 py-2 text-center">
+                <p class="footer-copyright">
+                  &copy 2020 StartNG. All Right Reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- jquery and bootstrap cdn -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
+     <!--Flickty js-->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!--Flickty js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>

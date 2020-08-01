@@ -58,7 +58,7 @@ header h3 {
 }
 
 header {
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
     background: #F2EBE9 !important;
 }
 
@@ -167,10 +167,6 @@ div ul li {
     }
 }
 
-.container {
-    max-width: 1238px !important;
-    overflow: hidden !important;
-}
 
 .twitter {
     color: #00acee;
@@ -178,4 +174,11 @@ div ul li {
 
 .fb {
     color: #3b5998;
+}
+
+.container {
+    max-width: 1238px !important;
+    overflow: hidden !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }

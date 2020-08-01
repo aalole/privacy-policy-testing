@@ -331,4 +331,6 @@ footer .nav-link:hover {
 .container {
 	max-width: 1238px !important;
 	overflow: hidden !important;
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
 }

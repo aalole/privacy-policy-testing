@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: 'Averta';
+    font-family: 'Averta-Bold';
     src: url('../fonts/Averta-Bold.woff') format('woff'),
         url('../fonts/Averta-Bold.otf') format('opentype');
     font-weight: 600;
@@ -63,6 +63,7 @@ header .h-btn {
 .intro-txt2 {
     font-family: Averta-Bold;
     font-size: 32px;
+    color: #514949;
 }
 
 .intro-text p {
@@ -438,4 +439,6 @@ img {
 .container {
     max-width: 1238px !important;
     overflow: hidden !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }

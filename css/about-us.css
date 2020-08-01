@@ -105,7 +105,7 @@ header .h-btn {
 }
 
 hr {
-    border: 0.7px solid rgba(81, 73, 73, 0.4) !important;
+    /*border: 0.7px solid rgba(81, 73, 73, 0.4) !important;*/
 }
 
 .ul {
@@ -116,21 +116,19 @@ hr {
     font-family: 'Averta-Regular';
 }
 
-li {
-    color: #514949 !important;
+
+.ordered-list{
+    list-style-type: none;
 }
 
 .ordered-list li::before {
-    content: "\2012";
-    color: red;
-    font-family: 'Averta-Bold';
-    font-weight: 900 !important;
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: 1em;
-    margin-left: -2em;
-}
-
+    content: "\2012";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 /* section 2 */
 .section-3 {
     margin-top: 6rem;
@@ -234,6 +232,8 @@ footer .nav-link:hover {
 }
 
 .container {
-    max-width: 1238px;
-    overflow: hidden;
+    max-width: 1238px !important;
+    overflow: hidden !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }

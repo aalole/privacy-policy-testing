@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name=”robots” content=”nofollow”>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!--bootstrap cdn and jquery-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 
@@ -33,7 +35,7 @@
 
 
 
-    <title>curriculum</title>
+    <title>StartNG| Curriculum</title>
 </head>
 
 <body>
@@ -82,30 +84,33 @@
             </div>
         </header>
         <!-- * THIS IS THE END OF THE NAVBAR -->
-        <div class="text-center pb-5 pt-5 mt-5">
-            <p class="d-block pt-5 mt-5 intro-txt1">PROGRAM
+
+        <div class="text-center heading-title">
+            <p class="d-block  intro-txt1">PROGRAM
+
                 CURRICULUM</p>
-            <p class="d-block pb-5 intro-txt2">Gain enough
+            <p class="d-block intro-txt2">Gain enough
                 knowledge to help scale <br> through the tech industry for free.</p>
         </div>
     </section>
 
 
     <div class="container mt-5 mb-5">
-        <div class="row mx-auto">
+        <div class="row mx-auto" id="myAccordion">
+
             <div class="col-lg-3 mt-3 d-block mx-auto">
                 <!--curriculum drop down menu-->
-                <div class="accordion tab" id="myAccordion">
+                <div class="accordion">
                     <div class="card border-0 mb-3">
-
-                        <div class="card-header " id="headingOne" data-toggle="collapse"
-                            data-target="#collapseOne">
+                        <div class="card-header  tab-links" id="headingOne" data-toggle="collapse"
+                            data-target=".collapseOne">
                             <h2 class="mb-0 d-flex justify-content-between">
                                 <small class="sub-title pt-2"> UI/UX Design </small>
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#myAccordion">
+                        <div id="collapseOne" class=" collapseOne  collapse" aria-labelledby="headingOne"
+                            data-parent="#myAccordion">
                             <div class="card-b">
                                 <ul class="list-unstyled">
                                     <li class=" px-5 py-3 mb-2 list-div mb-2 mt-2">Visual Design</li>
@@ -117,13 +122,15 @@
 
                     </div>
                     <div class="card border-0 mb-3">
-                        <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
+                        <div class="card-header tab-links" id="headingTwo" data-toggle="collapse"
+                            data-target=" .collapseTwo">
                             <h2 class="mb-0 d-flex justify-content-between">
                                 <small class="sub-title pt-2"> Frontend Development </small>
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </h2>
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myAccordion">
+                        <div id="collapseTwo" class="collapseTwo collapse" aria-labelledby="headingTwo"
+                            data-parent="#myAccordion">
                             <div class="card-b">
                                 <ul class="list-unstyled">
                                     <li class=" px-5 py-3 mb-2 list-div mb-2 mt-2">HTML</li>
@@ -135,7 +142,8 @@
 
                     </div>
                     <div class="card border-0 mb-3">
-                        <div class="card-header"  id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+                        <div class="card-header" id="headingThree" data-toggle="collapse"
+                            data-target="#collapseThree, #backend">
                             <h2 class="mb-0 d-flex justify-content-between">
                                 <small class="sub-title pt-2">Backend Development </small>
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -154,13 +162,14 @@
                     </div>
 
                     <div class="card border-0 mb-3">
-                        <div class="card-header " id="headingFour" data-toggle="collapse" data-target="#collapseFour">
+                        <div class="card-header " id="headingFour" data-toggle="collapse"
+                            data-target="#collapseFour, #mobile">
                             <h2 class="mb-0 d-flex justify-content-between">
                                 <small class="sub-title pt-2">Mobile Development </small>
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </h2>
                         </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-parent="#myAccordion">
                             <div class="card-b border-0">
                                 <ul class="list-unstyled">
@@ -176,12 +185,26 @@
                 </div>
             </div>
 
+
             <div class="col-lg-9 col-12 mb-5">
+                <div class=" home32-cont tab-content mt-3">
+                    <h3 class="text-center track-title mt-4"> View Our Detailed Curriculum By Track</h3>
+                    <p class="track-text text-center my-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatem
+                        soluta fugit odit eos quo consequuntur perspiciatis error minima excepturi?</p>
+                    <!-- <div class="home32-btns">
+
+                        <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                    </div> -->
+                </div>
+               
+
                 <!-- design curriculum-->
-                <div class="home32 d-block mx-auto" id="design">
-                    <div class="home32-cont d-block mx-auto">
-                        <h4>1. Understanding the Principles and Theory of Visual Design</h4>
-                        <p> There are a few visual design principles that effect every project you'll create.
+                <div class=" tabcontent collapseOne collapse" aria-labelledby="headingOne"
+                    data-parent="#myAccordion">
+                    <div class="home32-cont">
+                        <p class="course-title"> 1. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
                             Understanding
                             these principles conceptually and learning to apply them practically...</p>
                         <div class="home32-btns">
@@ -190,140 +213,465 @@
                         </div>
                     </div>
                     <div class="home32-cont">
-                        <h4>2. Standing Strong with a Historical Graphic Design Grounding</h4>
-                        <p> There are a few visual design principles that effect every project you'll create.
+                        <p class="course-title">2. Standing Strong with a Historical Graphic Design Grounding</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
                             Understanding
                             these principles conceptually and learning to apply them practically...</p>
                         <div class="home32-btns">
 
-                            <button class="btn btn2">More Details</button>
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
                         </div>
                     </div>
                     <div class="home32-cont">
-                        <h4> 3. Internalize the Visual Design Process, Conceptual Solutions, Real World Experience</h4>
-                        <p> There are a few visual design principles that effect every project you'll create.
+                        <p class="course-title"> 3. Internalize the Visual Design Process, Conceptual Solutions, Real
+                            World Experience</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
                             Understanding
                             these principles conceptually and learning to apply them practically...</p>
                         <div class="home32-btns">
-                            <button class="btn btn2">More Details</button>
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
                         </div>
                     </div>
                     <div class="home32-cont">
-                        <h4>4. Understanding the Principles and Theory of Visual Design</h4>
-                        <p> There are a few visual design principles that effect every project you'll create.
+                        <p class="course-title">4. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
                             Understanding
                             these principles conceptually and learning to apply them practically...</p>
                         <div class="home32-btns">
 
-                            <button class="btn btn2">More Details</button>
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
                         </div>
                     </div>
                     <div class="home32-cont">
-                        <h4>5. Internalize the Visual Design Process, Conceptual Solutions, Real World Experience</h4>
-                        <p> There are a few visual design principles that effect every project you'll create.
+                        <p class="course-title">5. Internalize the Visual Design Process, Conceptual Solutions, Real
+                            World Experience</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
                             Understanding
                             these principles conceptually and learning to apply them practically...</p>
                         <div class="home32-btns">
-                            <button class="btn btn2">More Details</button>
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
                         </div>
                     </div>
                     <div class="home32-cont">
-                        <h4> 6. Understanding the Principles and Theory of Visual Design</h4>
-                        <p> There are a few visual design principles that effect every project you'll create.
+                        <p class="course-title"> 6. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
                             Understanding
                             these principles conceptually and learning to apply them practically...</p>
                         <div class="home32-btns">
-                            <button class="btn btn2">More Details</button>
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
                         </div>
                     </div>
                 </div>
 
+                <!-- frontend -->
+                <div class=" tabcontent collapseTwo collapse " id="frontend" data-parent="#myAccordion">
+                    <div class="home32-cont">
+                        <p class="course-title">1. HTML - HyperText Markup Language</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">2. CSS Tips and Tricks</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title"> 3. Javascript DOM Manipulation </p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">4. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">5. Internalize the Visual Design Process, Conceptual Solutions, Real
+                            World Experience</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+                            <button class="btn btn2">More Details</button>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title"> 6. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- backend -->
+                <div class=" tabcontent collapse" id="backend" data-parent="#myAccordion">
+                    <div class="home32-cont">
+                        <p class="course-title">1. NodeJS For Beginners</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">2. PHP For Dummies</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title"> 3. Getting Started with Python, Real World Experience</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">4. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">5. Internalize the Visual Design Process, Conceptual Solutions, Real
+                            World Experience</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title"> 6. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile -->
+                <div class=" tabcontent collapse" id="mobile" data-parent="#myAccordion">
+                    <div class="home32-cont">
+                        <p class="course-title">1. Getting Started with Java</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">2. Getting Started with Kotlin</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title"> 3. Getting Started with Flutter, Real World Experience</h4>
+                            <p class="course-text"> There are a few visual design principles that effect every project
+                                you'll create.
+                                Understanding
+                                these principles conceptually and learning to apply them practically...</p>
+                            <div class="home32-btns">
+                                <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                            </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">4. Understanding the Principles and Theory of Visual Design</p>
+                        <p class="course-text"> There are a few visual design principles that effect every project
+                            you'll create.
+                            Understanding
+                            these principles conceptually and learning to apply them practically...</p>
+                        <div class="home32-btns">
+
+                            <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                        </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title">5. Internalize the Visual Design Process, Conceptual Solutions, Real
+                            World Experience</h4>
+                            <p class="course-text"> There are a few visual design principles that effect every project
+                                you'll create.
+                                Understanding
+                                these principles conceptually and learning to apply them practically...</p>
+                            <div class="home32-btns">
+                                <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                            </div>
+                    </div>
+                    <div class="home32-cont">
+                        <p class="course-title"> 6. Understanding the Principles and Theory of Visual Design</h4>
+                            <p class="course-text"> There are a few visual design principles that effect every project
+                                you'll create.
+                                Understanding
+                                these principles conceptually and learning to apply them practically...</p>
+                            <div class="home32-btns">
+                                <a href="/single-curriculum.html"><button class="btn btn2">More Details</button></a>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
-            </div>
-        </div>
+    </div>
+    </div>
 
     </div>
     <!--curriculum table begins-->
     <!--footer begins here-->
 
 
-    <!-- Footer Section -->
-    <footer class="container mt-3">
-        <div class="row">
-            <div class="col-sm-6 col-lg-2 pb-4">
-                <a href="#"><img src="images/Header/header-img.png" alt="logo"></a>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-sm-6 col-lg-3 pb-4">
-                <h4>Quick Links</h4>
-                <ul class="navbar-nav">
-                    <div class="row">
-                        <div class="col-6">
-
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                            <li class="nav-item"><a class="nav-link" href="curriculum-v1.html">Curriculum</a></li>
-                            <li class="nav-item"><a class="nav-link" href="mentors.html">Mentors</a></li>
-                            <li class="nav-item"><a class="nav-link" href="certificate-request.html">Request
-                                    Certificates</a></li>
+    <!-- footer for desktop -->
+    <footer class="footer mt-5 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a class=" logo" href="#">
+                                <img src="images/contact-form/logo.png" alt="logo">
+                            </a>
                         </div>
-                        <div class="col-6">
-                            <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pastTechies.html">Previous Techies</a></li>
-                            <li class="nav-item"><a class="nav-link" href="past_project.html">Past Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
-                            <li class="nav-item"><a class="nav-link" href="policy.html">Privacy Policy</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Terms&Conditions.html">Terms and
-                                    Conditions</a></li>
+                        <div class=" ">
+                            <h5 class="font-weight-bold">Quick links</h5>
+                            <div class="d-flex justify-content-end">
+                                <ul class="nav nav-pills flex-column mr-5   mt-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 " href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 " href="about-us.html">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 " href="courses.html">Courses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" href="curriculumn-v1.html">Curriculum</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" href="mentors.html">Mentors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" href="certificate.html">Request Certificates</a>
+                                    </li>
+
+                                </ul>
+                                <ul class="nav nav-pills flex-column   mt-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 " href="FAQ.html">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 " href="pastTechies.html">Previous Techies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0 " href="past_project.html">Past Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" href="forum.html">Forum</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" href="policy.html">Privacy Policy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" href="Terms&Conditions.html">Terms and Conditions</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <h5 class="font-weight-bold">Contact us</h5>
+                            <p class=" mt-3">
+                                <a href="#" class="text-dark">Hello@start.ng</a>
+                            </p>
+                        </div>
+                        <div class="">
+                            <h5 class="font-weight-bold">Office Address</h5>
+                            <p class=" mt-3">
+                                92, Wolverine Avenue, Ikeja.<br>
+                                Lagos State, Nigeria
+                            </p>
+                        </div>
+                        <div class="">
+                            <h5 class="font-weight-bold">Follow us</h5>
+                            <div class="mt-3">
+                                <a href="#" class="text-decoration-none inline-block mr-3">
+                                    <img src="images/Contact-form/facebook.png">
+                                </a>
+                                <a href="#" class="text-decoration-none inline-block ">
+                                    <img src="images/Contact-form/twitter.png">
+                                </a>
+                            </div>
+
                         </div>
                     </div>
-                </ul>
-            </div>
-
-            <!-- Contact Us -->
-            <div class="col-sm-6 col-lg-2 pb-4">
-                <h4>Contact Us</h4>
-                <div>Hello@start.ng</div>
-            </div>
-
-            <!-- Office Address -->
-            <div class="col-sm-6 col-lg-3 pb-4">
-                <h4>Office Address</h4>
-                <address>
-                    <p>92 Wolverine Avenue,<br>
-                        Ikeja,<br>
-                        Lagos State, Nigeria.
-                    </p>
-                </address>
-            </div>
-
-            <!-- Follow Us -->
-            <div class="col-lg-2 pb-4">
-                <h4>Follow Us</h4>
-
-                <a class="facebook-link d-inline-block mr-3" href="https://www.facebook.com" target="_blank">
-                    <span>
-                        <span class="fab fa-facebook-square" aria-hidden="true"></span>
-                        <span class="sr-only">Facebook</span>
-                    </span>
-                </a>
-
-                <a class="twitter-link d-inline-block" href="https://www.twitter.com" target="_blank">
-                    <span>
-                        <span class="fab fa-twitter" aria-hidden="true"></span>
-                        <span class="sr-only">Twitter</span>
-                    </span>
-                </a>
+                    <hr>
+                    <div class="section-bottom">
+                        <div class="col-12 py-2 text-center">
+                            <p class="footer-copyright">
+                                &copy 2020 StartNG
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <!-- Copyright -->
-        <div class="row">
-            <div class="copyright col-12">
-                <p class="text-center"> &copy; 2020 StartNG</p>
+    <!-- footer for mobile -->
+    <footer class="d-md-none d-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row mobile-footer">
+                        <div class="col-6">
+                            <h5 class="font-weight-bold">Quick links</h5>
+                            <ul class="nav nav-pills flex-column mr-5   mt-3">
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 " href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 " href="about-us.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 " href="courses.html">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0" href="curriculumn-v1.html">Curriculum</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0" href="mentors.html">Mentors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0" href="certificate.html">Request Certificates</a>
+                                </li>
+
+                            </ul>
+                            <ul class="nav nav-pills flex-column   mt-3">
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 " href="FAQ.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 " href="pastTechies.html">Previous Techies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 " href="past_project.html">Past Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0" href="forum.html">Forum</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0" href="policy.html">Privacy Policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0" href="Terms&Conditions.html">Terms and Conditions</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <div class="">
+                                <h5 class="font-weight-bold">Contact us</h5>
+                                <p>
+                                    <a href="#" class="text-dark">Hello@start.ng</a>
+                                </p>
+                            </div>
+                            <div class="">
+                                <h5 class="font-weight-bold">Office Address</h5>
+                                <p>
+                                    92, Wolverine Avenue, Ikeja.<br>
+                                    Lagos State, Nigeria
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <a class=" logo" href="#">
+                                <img src="images/contact-form/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="font-weight-bold">Follow us</h5>
+                            <a href="#" class="text-decoration-none inline-block mr-3">
+                                <img src="images/Contact-form/facebook.png">
+                            </a>
+                            <a href="#" class="text-decoration-none inline-block ">
+                                <img src="images/Contact-form/twitter.png">
+                            </a>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="section-bottom">
+                        <div class="col-12 py-2 text-center">
+                            <p class="footer-copyright">
+                                &copy 2020 StartNG. All Right Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -345,11 +693,8 @@
             duration: 1000,
         });
     </script>
-
-
     <!-- custom JS file -->
     <script src="/js/curriculum.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
